@@ -1,0 +1,93 @@
+body {
+    font-size: 62.5%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(home-1.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: heart;
+    src: url("heart.ttf");
+}
+
+@font-face {
+    font-family: dense;
+    src: url("dense.otf");
+}
+
+@font-face {
+    font-family: ft81;
+    src: url("ft81.ttf");
+}
+
+.menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: antiquewhite;
+    font-family: ft81;
+    top: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li a {
+    float: left;
+    text-decoration: none;
+    padding: 1.4% 12%;
+    color: black;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.menu li a:hover { 
+    color: white;
+    background-color: darksalmon;
+    transition: 0.3s ease;
+}
+
+.face {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: rgba(255, 255, 255, .6);
+}
+
+.face h1 {
+    font-family: heart;
+    font-size: 12em;
+    vertical-align: middle;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.face p {
+    font-family: ft81;
+    font-size: 3em;
+}
+
+.face button {
+    background-color: #FFB091;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 8px 20px;
+    margin: 4px 2px;
+    text-align: center;
+    font-size: 1.5em;
+    transition: 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Garamond;
+    margin-bottom: 2%;
+    opacity: 0.7;
+}
+
+.face button:hover {
+    opacity: 1;
+}
