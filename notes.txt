@@ -1,0 +1,39 @@
+World Wide Web
+ - collection of web resources
+ - greatest information system
+ - Invented by Sir Tim Berners-Lee (1989)
+
+
+How does the World Wide Web work?
+URL - way of addressing the various web resources
+* dns -a llows you to map a hostname to an IP address
+
+
+HTTP: Hypertext Transfer Protocol
+- used to access resources on the world wide web
+- invented by Tim Berners-Lee at CERN (Conseil Européen pour la Recherche Nucléaire)
+- stateless protocol (cmmands are executed independently)
+
+
+
+HTTP Versions:
+
+1. HTTP 0.9 - the oneline protocol
+            - simple, the request consists of a single line and starts with the GET method followed by the oath to the resource
+
+
+2. HTTP 1.0 - 
+ 	    -
+
+3. HTTP 1.1 - standardized protocol
+	    - included the following improvements:
+		- connection can be reused
+		- pipelining has been added
+		- support for chunk responses
+		- content negotiation has been introduced
+4. HTTP 2   - Binary protocol rather than text
+	    - parallel requests can be handled
+	 goal: transfer resources faster over the world wide web
+
+HTTP Fundamentals:
+ - stateless communication protocol
