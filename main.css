@@ -27,26 +27,27 @@ body {
 .menu ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: antiquewhite;
+    background-color: white;
     font-family: ft81;
     top: 0;
     width: 100%;
     margin: 0px;
     padding: 0px;
+    text-align: justify;
 }
 
 .menu li a {
     float: left;
     text-decoration: none;
-    padding: 1.4% 12%;
-    color: black;
+    padding: 1.4% 1.5%;
+    color: dimgray;
     font-size: 2em;
     font-weight: 600;
 }
 
 .menu li a:hover { 
-    color: white;
-    background-color: darksalmon;
+    color: black;
+    background-color: antiquewhite;
     transition: 0.3s ease;
 }
 
@@ -90,4 +91,66 @@ body {
 
 .face button:hover {
     opacity: 1;
+}
+
+.desc {
+    background: rgba(255, 255, 255, 0.6);
+    font-family: Garamond;
+    font-size: 2.7em;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-top: 3%;
+}
+
+.notes {
+    background: rgba(255, 243, 237, 0.9);
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 3%;
+}
+
+.notes h2 {
+    margin: 0;
+    font-family: heart;
+    font-size: 8em;
+    text-align: center;
+    padding: 2%;
+}
+
+.topics img {
+    width: 7.5%;
+    height: 15%;
+    margin-left: 22%;
+    margin-right: auto;
+    margin-top: 0px;
+    float: left;
+}
+.topics h3 {
+    margin-bottom: 0px;
+    font-family: ft81;
+    background-color: white;
+    margin-left: 29.5%;
+    margin-right: 20.5%;
+    text-align: center;
+    font-size: 2em;
+    padding: 2%;
+}
+
+.topics:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: white;
+    color: dimgray;
+    font-family: ft81;
+    font-size: 2em;
+    text-align: center;
+    padding: 1.5%;
+    font-weight: 600;
+    margin: 0;
 }
