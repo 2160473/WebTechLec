@@ -66,7 +66,8 @@ HTTP Versions:
 HTTP Fundamentals:
 	- A client-server architecture
 	- Stateless communications protocol that does not keep client requests
-
+	- HTTP uses a request-response standard protocol
+		- 
 
 	*HTTP runs on top of TCP/IP
  	 - Port 80: HTTP
@@ -75,29 +76,29 @@ HTTP Fundamentals:
 	*HTTPS (HTTP over SSL/TLS)
 	 - Encrypts information that would be decrypted once received by the requestor
 
-HTTP Fundamentals:
-1. Cache Control 
+	 - HTTP provides support for the following functionalities:
+	 
+	1. Cache Control 
 	- having a copy in the local storage speeds up things
 
-
-2. Content Media Type Specification 
+	2. Content Media Type Specification 
 	- is negotiated between the client and the server
 	- how we specify the type of resource
 
-3. Content Negotiation
+	3. Content Negotiation
 	- mechanisms that make it possible to serve different versions of a document
 	- includes media type, language, etc
 
-4. Content / Transfer Codings
+	4. Content / Transfer Codings
 	-perform some transformation of the content before you send it,e.g compression (ZIP)
 
-5. Client Server Protocol Negotiations
+	5. Client Server Protocol Negotiations
 	-how clients and servers negotiate between themselves and switch protocols
 
-6. Persistent connections
+	6. Persistent connections
 	- was introduced in HHTP 1.1
 
-7. Request Pipelining/multiplexing
+	7. Request Pipelining/multiplexing
  	- this allows clients to make multiple requests without waiting for each response
 
 HTTP RESOURCE ADDRESSING:
@@ -105,20 +106,20 @@ HTTP RESOURCE ADDRESSING:
  * to access something on the web you must identify its location
  * script - reads profile data from a database
 
-scheme
+Scheme
  - either http or https
 
-authority
+Authority
  - authentication credentials / user information 
  - host: domain name of the server where the resource resides, or where the resource will be created
 
-path to resource 
+Path to resource 
  - may refer to a static or dynamic resource
 
-query
+Query
  - typically provided as key=value pairs with ampersand separators between key value pairs
 
-fragment identifier
+Fragment identifier
  - points to a subordinate resource
 
 HTTP REQUEST MESSAGE STRUCTURE:
