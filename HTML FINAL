@@ -1,0 +1,113 @@
+HTML (Hypertext Markup Language)
+ - a language that is used to mark-up webpages in the world wide web
+ - application of SGML
+ - SGML(Standard Generalized Markup Language)
+		- specialization of GML (General Markup Language) 
+		- language used to define mark-up languages (Meta-language)
+ - HTML has been used to specify the structure and content of webpages as well as its aesthetics
+ - Nowadays, you should solely specify the structure and content of the webpages because a separate technology can be used to manipulate the aesthetics of a webpage called Style Sheets
+
+
+*Semantic VS. Non-Semantic Coding
+ Semantic - using codes the way they're intended to be used.
+ Non-semantic - using codes the way they are not intented to be used ( commonly for presentational aspects)
+
+HTML VERSIONS:
+1. HTML 1.0
+  	- first release of HTML in the world (1991)
+	  - a hybrid of SGML
+	  - language is limiting
+
+2. HTML 2.0
+	  - released in 1994
+	  - first official set of standards for HTML
+
+3. HTML 3.0
+  	- Netscape adde new proprietary tags(only works on certain browsers) which pushed David Raggett to add more abilities to HTML.
+
+4. HTML 3.2 
+	  - first version to be released as a W3C recommendation
+
+5. HTML 4.0 
+	  - last iteration of the classic html
+	  - in 1998, it became the official standard
+	  - supports cascading style sheets
+
+6. HTML 4.01
+	  - corrected HTML 4.0 and became HTML 4.01
+	  - final version of HTML 4.0
+
+7. XHTML (2002-2003)
+ 	  - Coming from the flexible world of HTML, W3C wanted to make things more stricter by adding xml to html and calling it XHTML. The intentions were good but it was not used by most developers that were used to the 	flexibility of HTML and even by browsers because of the big discrepancy of what was already existing.
+	  - XHTML has all the elements and attributes of HTML but with stricter implementations. 
+
+8. HTML5
+    - Ian Hickson started a breakaway group from XHTML, forming the group WHATWG. They aimed to stop the nonesense of XHTML and bring back what developers were used to
+  and what browsers already supported, which was HTML, and modernize the language. The group considered this to be a more pragmatic approach to further developing the
+  technology, rather than XHTML, which was an abrupt change. Initially, W3C did not support the idea and disapprove of the proposal which lead to them creating the
+  breakaway group. Since, HTML5 became more popular with developers because of its backward compatibility, W3C eventually supported the idea and joined the group in
+  2006. The first draft of HTML was released in 2008, editor being Ian Hickson. Their projection was that HTML5 would be a specification in the year 2022, but the
+  adoption to HTML5 was rapid. Reasons HTML5 was easily adapted includes the huge development in mobile technology, and the death of Flash technology, thanks to the
+  late Steve Jobs that declared they would not be using it in their IOS devices. The first standard recommendation for HTML5 was in 2014, way earlier than the projected
+  year.
+    - HTML5 is a combination of HTML4, XHTML and the DOM(Document Object Model) technology. Meaning there are two ways of writing in HTML5, the flexible way or the more 
+  stricter way. The name XHTML5 was considered but then later on disregarded.
+    - HTML5.1(2016) and HTML5.2(2017) included minor revisions.
+
+HTML DOCUMENT STRUCTURE
+*VERSION INFORMATION (DOCTYPE)
+- DOCTYPE is used to indicate that the document is following standards, which would enable browsers to render the document in standards mode rendering. Quirks mode 
+  rendering in browsers are used for "malformed" documents, with no DOCTYPE heading.Different browsers may have different ways of rendering in quirks mode. An example 
+  that leads to a documents invalidity or malformity is misnesting of tags. 3 flavors of HTML4 are strict, transitional and framesets and have longer DOCTYPE headings.
+
+*ROOT ELEMENTS (head and body element)
+	-head element containts declarative section that contains document metadata, such as the title of the document or linking other documents needed like stylesheets.
+	-body element is what the users sees when opened in a browser
+
+HTML DOCUMENT COMPONENTS
+- HTML5 is case-insensitive.
+- an html element comprises of tags, attributes and content. <H1> WebTechLec </H1> is an element and is not just a tag.
+
+*TAGS
+- HTML tags define every structure on an HTML page. Most HTML tags have two parts an opening tag and closing tag. 
+
+*CONTENT
+ -Content Model
+  	- Each element has their specified content models which simply defines what it can contain, usually texts and also other elements. Knowing this can help follow 
+          standards and not always having to render and check the validity of HTML documents. 
+ -Elements wih no content are called void elements.
+
+*ATTRIBUTES
+- These are placed in start/beginning tags and are specifications of other information. 
+1. Global Attributes
+  	- applied across the board or for all elements.
+
+2. Custom/Non-Visible Data Attributes
+  	- defines own attributes and is not standardize, meaning other browsers may not support it or the name is already being used by that browser.
+
+3. WAI-ARIA Attributes
+    - Web Accessibility Initiative - Accessible Rich Internet Applications attributes specifies ways to boost accesibility of HTML for people with constraints
+    when using the web, in other words, help when dealing with assistive technology.    
+4. Element-Specific Attributes
+  	- Attributes which pertain to certain elements.
+
+*MathML (Mathematical Markup Language)
+ - another standard published by W3C
+
+*SVG (Scalable Vector Graphic)
+- Bitmap graphics represent individual pixels which can lead to degraded quality when scaled.
+- SVG is another specification of W3C represents larger components, such as a rectangle, triangle or a circle.
+- SVG can be scaled without incurring quality loss and perform animations easily.
+
+*Character References
+- Other representations of characters, such as characters not found in a normal keyboard, colors, and mathematical symbols.  
+
+*Comments
+- An HTML comment begins with <!–– and is closed with ––>
+
+HTML PREPROCESSORS
+- language to have HTML written in a certain way and processed by a tool that would turn it into normal HTML.
+
+**Nowadays, most applications are moving to the web. Which has alot of advantages, such as being server-based and having a cheap entry point, which is a browser. But 
+  disadvantages still exists, example is not accessible without the Internet.
+**Always follow standards and validate documents. Validation of HTML documents is important, specially for front-end developers. 
