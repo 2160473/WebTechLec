@@ -1,13 +1,13 @@
 World Wide Web
 	- THE WEB MAKES USE OF THE INTERCONNECTIVITY STRUCTURE OF THE INTERNET AND IS NOT THE INTERNET ITSELF.
-	- A collection of web resources and applications via the Internet (Internetwork ìconnection across boundariesî)
+	- A collection of web resources and applications via the Internet (Internetwork ‚Äúconnection across boundaries‚Äù)
 	- Contains hypermedia; one document that contains links to other documents.
-	- Considered to be todayís greatest information system
-	- Inventor: Tim Berners-Lee (1989), he worked at CERN(Conseil EuropÈen pour la Recherche NuclÈaire) and was appointed as a knight. He was the one who thought of 
+	- Considered to be today‚Äôs greatest information system
+	- Inventor: Tim Berners-Lee (1989), he worked at CERN(Conseil Europ√©en pour la Recherche Nucl√©aire) and was appointed as a knight. He was the one who thought of 
 	  putting HTTP, HTML and URL together but did not invent each.
 	- Early motivation for the creation of the World Wide Web was for sharing of scientific papers
 	- Web Resources can be static, already existing, or dynamic, produced on the fly, example is search engine results.
-	- ìSPIDERSî are applications that crawls the web to gather as much information as possible
+	- ‚ÄúSPIDERS‚Äù are applications that crawls the web to gather as much information as possible
 	- Other platforms that did not win over the www are Gopher(Menu Based) and WAIS (Wide Area Information Server)
 
 How does the World Wide Web work?
@@ -30,13 +30,13 @@ User-Agent:
 
 HTTP (Hypertext Transfer Protocol)
 	- Application layer communications protocol used to access resources on the World Wide Web
-	- Inventor: Tim Berners Lee at CERN(Conseil EuropÈen pour la Recherche NuclÈaire) in 1989
+	- Inventor: Tim Berners Lee at CERN(Conseil Europ√©en pour la Recherche Nucl√©aire) in 1989
 	- Jointly Developed by the W3C (World Wide Web Consortium) and IETF (Internet Engineering Task Force)
 	- A stateless pull protocol that retrieves web resources
 
-ïData Packets = Chunks of data
-ïIf you can send binary, you can send anything
-ïPromiscuous Mode = Getting packets not meant for you
+‚Ä¢Data Packets = Chunks of data
+‚Ä¢If you can send binary, you can send anything
+‚Ä¢Promiscuous Mode = Getting packets not meant for you
 
 
 HTTP Versions:
@@ -95,11 +95,10 @@ HTTP Fundamentals:
 	-how clients and servers negotiate between themselves and switch protocols
 
 6. Persistent connections
-	- was introduced in http 1.1
+	- was introduced in HHTP 1.1
 
 7. Request Pipelining/multiplexing
- 
-8. Authorization
+ 	- this allows clients to make multiple requests without waiting for each response
 
 HTTP RESOURCE ADDRESSING:
 -resources in HTTP are identified using URI's (Uniform Resource Identifier) 
@@ -151,14 +150,13 @@ I. Standard methods
  - used in submitting HTML form data
 
 4.PUT 
- - create or replace the state of the target resource with the state defined by the rep. enclosed in the request message payload
+ - create or replace the state of the target resource with the state defined by the representation enclosed in the request message payload
 
 5. DELETE 
  - removes connection/association between the target resource and its current functionality
 
 6. OPTIONS
  - this method allows clients to determine the options and/or requirements associated with a resource
-** way of validating
 
 7. TRACE
  - requests a remote application-level loop back to the request message
@@ -167,10 +165,11 @@ I. Standard methods
  - commonly used to create an end-to-end virtual connection
 
 II. Method Properties
- 1. Safe Methods - client does not make a request abd does not expect any state change  
+ 1. Safe Methods - client does not make a request and does not expect any state change  
 	- GET, HEAD, OPTIONS, TRACE
 
- 2. Idempotent Methods 
+ 2. Idempotent Methods - methods can be called several times, but with no change in the outcomes. 
+ 		       - A method can be called once, twice, or ten times over but the result stays the same. 
 	- GET, HEAD, OPTIONS, TRACE, PUT, DELETE
 
  3. Cacheable Methods - indicates that the response to a method is allowed to be stored for future reuse
@@ -187,7 +186,7 @@ HTTP MESSAGE HEADERS:
 4. Entity Header Fields - refers to the entities
 -Allow, Content-Encoding, Content-Language, Content-Length, Content-Location, Content-Range, Content-Type
 
-HTTP STATUS CODE
+HTTP STATUS CODES
 *Informational (1xx)
 100 Continue
 101 Switching Protocols
