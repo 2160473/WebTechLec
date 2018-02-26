@@ -1,0 +1,345 @@
+World Wide Web
+	- THE WEB MAKES USE OF THE INTERCONNECTIVITY STRUCTURE OF THE INTERNET AND IS NOT THE INTERNET ITSELF.
+	- A collection of web resources and applications via the Internet (Internetwork “connection across boundaries”)
+	- Contains hypermedia; one document that contains links to other documents.
+	- Considered to be today’s greatest information system
+	- Inventor: Tim Berners-Lee (1989), he worked at CERN(Conseil Européen pour la Recherche Nucléaire) and was appointed as a knight. He was the one who thought of 
+	  putting HTTP, HTML and URL together but did not invent each.
+	- Early motivation for the creation of the World Wide Web was for sharing of scientific papers
+	- Web Resources can be static, already existing, or dynamic, produced on the fly, example is search engine results.
+	- “SPIDERS” are applications that crawls the web to gather as much information as possible
+	- Other platforms that did not win over the www are Gopher(Menu Based) and WAIS (Wide Area Information Server)
+
+How does the World Wide Web work?
+URLS:
+	- Way of addressing the various web resources
+	- Humans are not good at remembering numbers, so we associate descriptive names to websites/pages to remember better
+
+DNS: 
+	- Allows mapping a hostname to an IP address
+
+ADDITIONAL NOTES:
+Web Debugger Proxy:
+	- Eavesdrops on web communications
+
+User-Agent:
+	- Indicate what type of device is trying to access the resource
+	- Remember that a mobile browser differs from a web browser
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+HTTP (Hypertext Transfer Protocol)
+	- Application layer communications protocol used to access resources on the World Wide Web
+	- Inventor: Tim Berners Lee at CERN(Conseil Européen pour la Recherche Nucléaire) in 1989
+	- Jointly Developed by the W3C (World Wide Web Consortium) and IETF (Internet Engineering Task Force)
+	- A stateless pull protocol that retrieves web resources
+
+•Data Packets = Chunks of data
+•If you can send binary, you can send anything
+•Promiscuous Mode = Getting packets not meant for you
+
+
+HTTP Versions:
+
+1. HTTP 0.9 - The oneline protocol
+	    - How it works: Connect -> Request (GET + IP Address) -> Response (HTML) -> Disconnect
+
+2. HTTP 1.0 - 
+ 	    -
+
+3. HTTP 1.1 - standardized protocol
+	    - included the following improvements:
+		- compression of data
+		- persistent connection
+		- support for chunk responses
+		- content negotiation
+	    - improvements helped reduce the latency of accessing web resources
+
+4. HTTP 2   - Binary protocol rather than text. 
+	    - Parallel requests can now be handled.
+	    - Server Push is an added feature that volunteers information to the client. The intention is to lessen load time since the server would send all 
+	      the resources need already
+	    - Pipelining, which sends requests continuously instead of waiting for the response before being able to make another request
+	 goal: transfer resources faster over the world wide web
+
+
+HTTP Fundamentals:
+	- A client-server architecture
+	- Stateless communications protocol that does not keep client requests
+
+
+	*HTTP runs on top of TCP/IP
+ 	 - Port 80: HTTP
+	 - Port 443: HTTPS
+	
+	*HTTPS (HTTP over SSL/TLS)
+	 - Encrypts information that would be decrypted once received by the requestor
+
+HTTP Fundamentals:
+1. Cache Control 
+	- having a copy in the local storage speeds up things
+
+
+2. Content Media Type Specification 
+	- is negotiated between the client and the server
+	- how we specify the type of resource
+
+3. Content Negotiation
+	- mechanisms that make it possible to serve different versions of a document
+	- includes media type, language, etc
+
+4. Content / Transfer Codings
+	-perform some transformation of the content before you send it,e.g compression (ZIP)
+
+5. Client Server Protocol Negotiations
+	-how clients and servers negotiate between themselves and switch protocols
+
+6. Persistent connections
+	- was introduced in http 1.1
+
+7. Request Pipelining/multiplexing
+ 
+8. Authorization
+
+HTTP RESOURCE ADDRESSING:
+-resources in HTTP are identified using URI's (Uniform Resource Identifier) 
+ * to access something on the web you must identify its location
+ * script - reads profile data from a database
+
+scheme
+ - either http or https
+
+authority
+ - authentication credentials / user information 
+ - host: domain name of the server where the resource resides, or where the resource will be created
+
+path to resource 
+ - may refer to a static or dynamic resource
+
+query
+ - typically provided as key=value pairs with ampersand separators between key value pairs
+
+fragment identifier
+ - points to a subordinate resource
+
+HTTP REQUEST MESSAGE STRUCTURE:
+ - request line = method + request target + protocol version
+ - message header = general/request/entity
+ - empty line
+ - message body 0r the payload(optional)
+
+HTTP RESPONSE MESSAGE STRUCTURE:
+ - status line = protocol version + status code + reason phrase
+ - message headers
+ - empty line
+ - message body 
+
+HTTP REQUEST METHODS:
+ - indicates the desired action to be performed for a given resource
+
+I. Standard methods
+ 
+1.GET 
+ - retrieved resource is returned in the message body of the response as an entity
+ - most commonly used HTTP method
+
+2. HEAD
+ - identical to the GET method except that the server does not send a nessage body in the response 
+ - used to retrieve metadata
+
+3. POST
+ - used in submitting HTML form data
+
+4.PUT 
+ - create or replace the state of the target resource with the state defined by the rep. enclosed in the request message payload
+
+5. DELETE 
+ - removes connection/association between the target resource and its current functionality
+
+6. OPTIONS
+ - this method allows clients to determine the options and/or requirements associated with a resource
+** way of validating
+
+7. TRACE
+ - requests a remote application-level loop back to the request message
+
+8. CONNECT 
+ - commonly used to create an end-to-end virtual connection
+
+II. Method Properties
+ 1. Safe Methods - client does not make a request abd does not expect any state change  
+	- GET, HEAD, OPTIONS, TRACE
+
+ 2. Idempotent Methods 
+	- GET, HEAD, OPTIONS, TRACE, PUT, DELETE
+
+ 3. Cacheable Methods - indicates that the response to a method is allowed to be stored for future reuse
+	- GET, HEAD, POST
+
+
+HTTP MESSAGE HEADERS:
+1. General Header Fields - used by both clients and servers
+
+2. Request Header Fields - messages generated by clients
+
+3. Response Header Fields - found only in response messages (Servers)
+
+4. Entity Header Fields - refers to the entities
+-Allow, Content-Encoding, Content-Language, Content-Length, Content-Location, Content-Range, Content-Type
+
+HTTP STATUS CODE
+*Informational (1xx)
+100 Continue
+101 Switching Protocols
+102 Processing
+
+*Success (2xx)
+200 OK
+201 Created
+202 Accepted
+203 Non-authoritative Information
+204 No Content
+205 Reset Content
+206 Partial Content
+207 Multi-Status
+208 Already Reported
+226 IM Used
+
+*Redirection (3xx)
+300 Multiple Choices
+301 Moved Permanently
+302 Found
+303 See Other
+304 Not Modified
+305 Use Proxy
+307 Temporary Redirect
+308 Permanent Redirect
+
+*Client-Error (4xx)
+400 Bad Request
+401 Unauthorized
+402 Payment Required
+403 Forbidden
+404 Not Found
+405 Method Not Allowed
+406 Not Acceptable
+407 Proxy Authentication Required
+408 Request Timeout
+409 Conflict
+410 Gone
+411 Length Required
+412 Precondition Failed
+413 Payload Too Large
+414 Request-URI Too Long
+415 Unsupported Media Type
+416 Requested Range Not Satisfiable
+417 Expectation Failed
+418 I'm a teapot
+421 Misdirected Request
+422 Unprocessable Entity
+423 Locked
+424 Failed Dependency
+426 Upgrade Required
+428 Precondition Required
+429 Too Many Requests
+431 Request Header Fields Too Large
+444 Connection Closed Without Response
+451 Unavailable For Legal Reasons
+499 Client Closed Request
+
+*Server-Error (5xx)
+500 Internal Server Error
+501 Not Implemented
+502 Bad Gateway
+503 Service Unavailable
+504 Gateway Timeout
+505 HTTP Version Not Supported
+506 Variant Also Negotiates
+507 Insufficient Storage
+508 Loop Detected
+510 Not Extended
+511 Network Authentication Required
+599 Network Connect Timeout Error
+
+HTTP EXTENSIONS
+- Enables the defining of new request methods, message headers or status codes.
+- WebDAV(Web Distributed Authoring and Versioning) is one such extension.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+HISTORY CONTINUED
+
+XHTML (2002-2003)
+- Coming from the flexible world of HTML, W3C wanted to make things more stricter by adding xml to html and calling it XHTML. The intentions were good but it was not
+  used by most developers that were used to the flexibility of HTML and even by browsers because of the big discrepancy of what was already existing.
+- XHTML has all the elements and attributes of HTML but with stricter implementations. 
+
+HTML5
+- Ian Hickson started a breakaway group from XHTML, forming the group WHATWG. They aimed to stop the nonesense of XHTML and bring back what developers were used to
+  and what browsers already supported, which was HTML, and modernize the language. The group considered this to be a more pragmatic approach to further developing the
+  technology, rather than XHTML, which was an abrupt change. Initially, W3C did not support the idea and disapprove of the proposal which lead to them creating the
+  breakaway group. Since, HTML5 became more popular with developers because of its backward compatibility, W3C eventually supported the idea and joined the group in
+  2006. The first draft of HTML was released in 2008, editor being Ian Hickson. Their projection was that HTML5 would be a specification in the year 2022, but the
+  adoption to HTML5 was rapid. Reasons HTML5 was easily adapted includes the huge development in mobile technology, and the death of Flash technology, thanks to the
+  late Steve Jobs that declared they would not be using it in their IOS devices. The first standard recommendation for HTML5 was in 2014, way earlier than the projected
+  year.
+- HTML5 is a combination of HTML4, XHTML and the DOM(Document Object Model) technology. Meaning there are two ways of writing in HTML5, the flexible way or the more 
+  stricter way. The name XHTML5 was considered but then later on disregarded.
+- HTML5.1(2016) and HTML5.2(2017) included minor revisions.
+
+HTML DOCUMENT STRUCTURE
+1. VERSION INFORMATION (DOCTYPE)
+- DOCTYPE is used to indicate that the document is following standards, which would enable browsers to render the document in standards mode rendering. Quirks mode 
+  rendering in browsers are used for "malformed" documents, with no DOCTYPE heading.Different browsers may have different ways of rendering in quirks mode. An example 
+  that leads to a documents invalidity or malformity is misnesting of tags. 3 flavors of HTML4 are strict, transitional and framesets and have longer DOCTYPE headings.
+
+2. ROOT ELEMENTS (head and body element)
+	head element containts declarative section that contains document metadata, such as the title of the document or linking other documents needed like stylesheets.
+	body element is what the users sees when opened in a browser
+
+HTML DOCUMENT COMPONENTS
+- HTML5 is case-insensitive.
+- an html element comprises of tags, attributes and content. <H1> WebTechLec </H1> is an element and is not just a tag.
+
+1. TAGS
+
+2. CONTENT
+ 2.1 Content Model
+  - Each element has their specified content models which simply defines what it can contain, usually texts and also other elements. Knowing this can help follow 
+    standards and not always having to render and check the validity of HTML documents. 
+ 2.2 Elements wih no content are called void elements.
+
+3 ATTRIBUTES
+ - These are placed in start/beginning tags and are specifications of other information. 
+ 
+ 3.1 Global Attributes
+  - applied across the board or for all elements.
+ 3.2 Custom/Non-Visible Data Attributes
+  - defines own attributes and is not standardize, meaning other browsers may not support it or the name is already being used by that browser.
+ 3.3 WAI-ARIA Attributes
+  - Web Accessibility Initiative - Accessible Rich Internet Applications attributes specifies ways to boost accesibility of HTML for people with constraints
+    when using the web, in other words, help when dealing with assistive technology.    
+ 3.4 Element-Specific Attributes
+  - Attributes which pertain to certain elements.
+
+4. Character References
+- Other representations of characters, such as characters not found in a normal keyboard, colors, and mathematical symbols.  
+
+5. Comments
+
+*other useful components
+1. MathML (Mathematical Markup Language)
+ - another standard published by W3C
+
+2. SVG (Scalable Vector Graphic)
+- Bitmap graphics represent individual pixels which can lead to degraded quality when scaled.
+- SVG is another specification of W3C represents larger components, such as a rectangle, triangle or a circle.
+- SVG can be scaled without incurring quality loss and perform animations easily.
+
+HTML PREPROCESSORS
+- language to have HTML written in a certain way and processed by a tool that would turn it into normal HTML.
+
+ADDITIONAL NOTES:
+**Nowadays, most applications are moving to the web. Which has alot of advantages, such as being server-based and having a cheap entry point, which is a browser. But 
+  disadvantages still exists, example is not accessible without the Internet.
+**Always follow standards and validate documents. Validation of HTML documents is important, specially for front-end developers. 
