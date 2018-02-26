@@ -1,0 +1,51 @@
+HTML 
+  -language that we use to mark-up our webpages in the world wide web
+  -Application of SGML 
+    -SGML (Standard Generalized markup language) – specialization of GML (General Mark-up Language) and it is a language used to define mark-up languages (Meta-language)
+
+
+  History
+   -Has been used to specify the structure and content of webpages as well as its aesthetics
+   -Nowadays, you should solely specify the structure and content of the webpages because a separate 	technology to manipulate the aesthetics of a webpage (Style Sheets).
+ 
+  Semantic VS. Non-semantic coding 
+   -Semantic – using codes the way they’re intended to be used. 
+   -Non-semantic – using codes the way they are not intended to be used (commonly, for presentational 			aspects)
+
+  Versions:
+   HTML 1.0 
+    -First release of HTML in the world (1991)
+    -A hybrid of SGML
+    -Language is limiting
+
+   HTML 2.0
+    -Released in 1994
+    -First official set of standards for HTML 
+
+   HTML 3.0
+    -Netscape added new proprietary tags (only work on a certain browser) which pushed Dave Raggett to add 	more abilities to HTML. It became HTML 3.0.
+
+   HTML 3.2
+    -First version to be released as a W3C Recommendation.
+
+   HTML 4.0
+    -Last iteration of the classic HTML
+    -In 1998, it became the official standard, 
+    -Supports cascading style sheets
+
+   HTML 4.01 
+    -Corrected HTML 4.0 and became HMTL 4.01
+    -Final version of HTML 4.0
+
+   XHTML 1.0
+    -Combined HTML and XML 
+      -What is XML?
+       -Extensible Markup Language has rule sets for encoding documents that could be understood by both 			human and machine.
+    -Mostly, a new set of coding rules
+
+   HTML 5
+    -WHATWG (Web Hypertext Application Technology Working Group) made specifications that would resolve 		bugs in the previous versions of HTML
+    -The W3C has recognized this and implemented most of them in HTML
+
+
+
