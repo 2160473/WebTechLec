@@ -11,24 +11,29 @@ body {
 
 @font-face {
     font-family: heart;
-    src: url("heart.ttf");
+    src: url("fonts/heart.ttf");
 }
 
 
 @font-face {
     font-family: dense;
-    src: url("dense.otf");
+    src: url("fonts/dense.otf");
 }
 
 
 @font-face {
     font-family: ft81;
-    src: url("ft81.ttf");
+    src: url("fonts/ft81.ttf");
 }
 
 @font-face {
     font-family: proxima;
-    src: url("proxima.otf");
+    src: url("fonts/proxima.otf");
+}
+
+@font-face {
+    font-family: nova;
+    src: url("fonts/nova.woff");
 }
 
 .menu ul {
@@ -213,4 +218,55 @@ footer {
     padding: 1.5%;
     font-weight: 600;
     margin: 0;
+}
+
+/*for prelims.html*/
+
+.content {
+    background: rgba(240, 255, 250, 0.9);
+    margin-top: 5%;
+    padding-top: 0px;
+    padding-bottom: 3%;
+}
+
+.title {
+    background: rgba(255, 255, 255, 0.6);
+    margin-left: 15%;
+    margin-right: 15%;    
+    text-align: center;
+    margin-top: 10%;
+}
+
+.title h1 {
+    font-family: nova;
+    font-size: 12em;
+    vertical-align: middle;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #333333;
+}
+
+.topics {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.topics h2 {
+    margin-top: 3%;
+    padding: 1%;
+    padding-left: 3%;
+    background-color: #ACE2CD;
+    color: #333333;
+    font-family: proxima;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+.topics p, ol{
+    margin-top: 0px;
+    background-color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding: 3%;
+    font-family: times new roman;
+    font-size: 2em; 
 }

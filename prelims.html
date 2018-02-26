@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <title>Web Systems and Technologies</title>
+    </head>
+    
+    <body>
+        <header class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prelims.html">WWW</a></li>
+                    <li><a href="#http">HTTP</a></li>
+                    <li><a href="#html">HTML</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="title">
+            <h1>World Wide Web</h1>
+        </div>
+        
+        
+        <div class="content">
+            <div class="topics">
+                <br>
+                <h2>WHAT IS WWW?</h2>
+                <p>
+                    • <em>The web makes use of the interconnectivity structire of the internet and is not the internet itself</em>
+                    <br>•  A collection of web resources and applications via the Internet (Internetwork “connection across boundaries”)
+	               <br>•  Contains hypermedia; one document that contains links to other documents.
+	               <br>•  Considered to be today’s greatest information system
+	               <br>•  Inventor: Tim Berners-Lee (1989), he worked at CERN(Conseil Européen pour la Recherche Nucléaire) and was appointed as a knight. He was the one who thought of putting HTTP, HTML and URL together but did not invent each.
+	               <br>•  Early motivation for the creation of the World Wide Web was for sharing of scientific papers
+	               <br>•  Web Resources can be static, already existing, or dynamic, produced on the fly, example is search engine results.
+	               <br>•  “SPIDERS” are applications that crawls the web to gather as much information as possible
+	               <br>•  Other platforms that did not win over the www are Gopher(Menu Based) and WAIS (Wide Area Information Server)       
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HOW DOES THE WWW WORK?</h2>
+                <p>
+                    URLS:
+                    <br>• Way of addressing the various web resources
+                    <br>• Humans are not good at remembering numbers, so we associate descriptive names to websites/pages to remember better
+                    <br><br>
+                    DNS: 
+                    <br>• Allows mapping a hostname to an IP address
+                    <br><br>
+                    ADDITIONAL INFO:
+                    <br>
+                    Web Debugger Proxy:
+                    <br>• Eavesdrops on web communications
+                    <br>User-Agent:
+                    <br>• Indicate what type of device is trying to access the resource
+                    <br>• Remember that a mobile browser differs from a web browser
+                    <br><br>
+                    Hypermedia:
+                    <br>• One document tht contains links to other documents
+                    <br><br>
+                    Static Resource:
+                    <br>• Exists in the form that you are accessing it
+                    <br><br>
+                    Dynamic Resource:
+                    <br>• Dynamic resource is produced on the fly (e.g. google's search results page)
+                </p>
+            </div>
+        </div>
+        
+        <div class="title">
+            <h1 id="http">Hypertext Transfer Protocol</h1>
+        </div>
+        
+        <div class="content">            
+            <div class="topics">
+                <br>
+                <h2>WHAT IS HTTP?</h2>
+                <p>
+                    - Application layer communications protocol used to access resources on the World Wide Web
+                    <br><br>- Inventor: Tim Berners Lee at CERN(Conseil Européen pour la Recherche Nucléaire) in 1989
+                    <br><br>- Jointly Developed by the W3C (World Wide Web Consortium) and IETF (Internet Engineering Task Force)
+                    <br>- A stateless pull protocol that retrieves web resources
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTTP VERSIONS</h2>
+                <p>
+                    1. HTTP 0.9 
+                        <br>- The oneline protocol
+                        <br>- How it works: Connect -> Request (GET + IP Address) -> Response (HTML) -> Disconnect
+                    
+                    <br>
+                    <br>2. HTTP 1.0
+                        <br>- status code definitions and header field definitions were introduced. 
+                    
+                    <br>
+                    <br>3. HTTP 1.1 
+                        <br>- standardized protocol
+                        <br>- included the following improvements:
+                        <br>- compression of data
+                        <br>- persistent connection
+                        <br>- support for chunk responses
+                        <br>- content negotiation
+                        <br>- improvements helped reduce the latency of accessing web resources
+                    
+                    <br>
+                    <br>4. HTTP 2   
+                        <br>- Binary protocol rather than text. 
+                        <br>- Parallel requests can now be handled.
+                        <br>- Server Push is an added feature that volunteers information to the client. The intention is to lessen load time since the server would send all the resources need already
+                        <br>- Pipelining, which sends requests continuously instead of waiting for the response before being able to make another request goal: transfer resources faster over the world wide web
+                    
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTTP FUNDAMENTALS</h2>
+                <p>
+                    - A client-server architecture
+                    <br>- Stateless communications protocol that does not keep client requests
+                    <br>- HTTP uses a request-response standard protocol
+                    <br><br>• HTTP runs on top of TCP/IP
+                    <br>- Port 80: HTTP
+                    <br>- Port 443: HTTPS
+                    <br><br>
+                    • HTTPS (HTTP over SSL/TLS)
+                    <br>- Encrypts information that would be decrypted once received by the requestor
+                    <br>- HTTP provides support for the following functionalities:
+                </p>
+                <p>
+                    <br>
+                    1. Cache Control-
+                        <br>- having a copy in the local storage speeds up things
+                    
+                    <br><br>
+                    2. Content Media Type Specification 
+	                   <br>- is negotiated between the client and the server
+	                   <br>- how we specify the type of resource
+                    
+                    <br><br>
+                    3. Content Negotiation
+                        <br>- mechanisms that make it possible to serve different versions of a document
+                        <br>- includes media type, language, etc
+                    
+                    <br><br>
+                    4. Content / Transfer Codings
+                        <br>- perform some transformation of the content before you send it,e.g compression (ZIP)
+                    
+                    <br><br>
+                    5. Client Server Protocol Negotiations
+                        <br>- how clients and servers negotiate between themselves and switch protocols
+                    
+                    <br><br>
+                    6. Persistent connections
+                        <br>- was introduced in HHTP 1.1
+                    
+                    <br><br>
+                    7. Request Pipelining/multiplexing
+                        <br>- this allows clients to make multiple requests without waiting for each response
+                    
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTTP RESOURCE ADDRESSING</h2>
+                <p>
+                    -resources in HTTP are identified using URI's (Uniform Resource Identifier) <br>* to access something on the web you must identify its location
+                    <br>* script - reads profile data from a database
+                    <br><br>
+                    Scheme
+                    <br>- either http or https
+                    <br><br>
+                    Authority
+                    <br>- authentication credentials / user information 
+                    <br>- host: domain name of the server where the resource resides, or where the resource will be created
+                    <br><br>
+                    Path to resource 
+                    <br>- may refer to a static or dynamic resource
+                    <br><br>
+                    Query
+                    <br>- typically provided as key=value pairs with ampersand separators between key value pairs
+                    <br><br>Fragment identifier
+                    <br>- points to a subordinate resource
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTTP REQUEST MESSAGE STRUCTURE</h2>
+                <p>
+                    - request line = method + request target + protocol version
+                    <br>- message header = general/request/entity
+                    <br>- empty line
+                    <br>- message body Or the payload(optional)
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTTP RESPONSE MESSAGE STRUCTURE</h2>
+                <p>
+                    - status line = protocol version + status code + reason phrase
+                    <br>- message headers
+                    <br>- empty line
+                    <br>- message body 
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTTP REQUEST METHODS</h2>
+                <p>
+                    1. GET
+                        <br>- retrieved resource is returned in the message body of the response as an entity
+                        <br>- most commonly used HTTP method
+                    
+                    <br><br>
+                    2. HEAD
+                        <br>- identical to the GET method except that the server does not send a nessage body in the response 
+                        <br>- used to retrieve metadata
+                    
+                    <br><br>
+                    3. POST
+                        <br>- used in submitting HTML form data
+                    
+                    <br><br>
+                    4. PUT 
+                        <br>- create or replace the state of the target resource with the state defined by the representation enclosed in the request message payload
+                    
+                    <br><br>
+                    5. DELETE 
+                        <br>- removes connection/association between the target resource and its current functionality
+                    
+                    <br><br>
+                    6. OPTIONS
+                        <br>- this method allows clients to determine the options and/or requirements associated with a resource
+                    
+                    <br><br>
+                    7. TRACE
+                        <br>- requests a remote application-level loop back to the request message
+                    
+                    <br><br>
+                    8. CONNECT 
+                        <br>- commonly used to create an end-to-end virtual connection
+                    
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>METHOD PROPERTIES</h2>
+                <p>
+                    1. Safe Methods 
+                        <br>- client does not make a request and does not expect any state change  
+                        <br>- GET, HEAD, OPTIONS, TRACE
+                    
+                    <br><br>
+                    2. Idempotent Methods 
+                        <br>- methods can be called several times, but with no change in the outcomes. 
+                        <br>- A method can be called once, twice, or ten times over but the result stays the same. 
+                        <br>- GET, HEAD, OPTIONS, TRACE, PUT, DELETE
+                    
+                    <br><br>
+                    3. Cacheable Methods 
+                        <br>- indicates that the response to a method is allowed to be stored for future reuse
+                        <br>- GET, HEAD, POST
+                    
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTTP MESSAGE HEADERS</h2>
+                <p>
+                    1. General Header Fields 
+                        <br>- used by both clients and servers
+                    
+                    <br><br>
+                    2. Request Header Fields 
+                        <br>- messages generated by clients
+                    
+                    <br><br>
+                    3. Response Header Fields 
+                        <br>- found only in response messages (Servers)
+                    
+                    <br><br>
+                    4. Entity Header Fields 
+                        <br>- refers to the entities
+                        <br>- Allow, Content-Encoding, Content-Language, Content-Length, Content-Location, Content-Range, Content-Type
+                    
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTTP STATUS CODES</h2>
+                <p>
+                    - issued by the server in response to a request made by the client
+                    <br>
+                </p>
+                <br>
+                <p>
+                    I. Informational (1xx)
+                        <br>
+                        <br>100 Continue
+                        <br>101 Switching Protocols
+                        <br>102 Processing
+                    
+                    <br><br>
+                    II. Success (2xx)
+                        <br>
+                        <br>200 OK
+                        <br>201 Created
+                        <br>202 Accepted
+                        <br>203 Non-authoritative Information
+                        <br>204 No Content
+                        <br>205 Reset Content
+                        <br>206 Partial Content
+                        <br>207 Multi-Status
+                        <br>208 Already Reported
+                        <br>226 IM Used
+                    
+                    <br><br>
+                    III. Redirection (3xx)
+                        <br>
+                        <br>300 Multiple Choices
+                        <br>301 Moved Permanently
+                        <br>302 Found
+                        <br>303 See Other
+                        <br>304 Not Modified
+                        <br>305 Use Proxy
+                        <br>307 Temporary Redirect
+                        <br>308 Permanent Redirect
+                    
+                    <br><br>
+                    IV. Client-Error (4xx)
+                        <br>
+                        <br>400 Bad Request
+                        <br>401 Unauthorized
+                        <br>402 Payment Required
+                        <br>403 Forbidden
+                        <br>404 Not Found
+                        <br>405 Method Not Allowed
+                        <br>406 Not Acceptable
+                        <br>407 Proxy Authentication Required
+                        <br>408 Request Timeout
+                        <br>409 Conflict
+                        <br>410 Gone
+                        <br>411 Length Required
+                        <br>412 Precondition Failed
+                        <br>413 Payload Too Large
+                        <br>414 Request-URI Too Long
+                        <br>415 Unsupported Media Type
+                        <br>416 Requested Range Not Satisfiable
+                        <br>417 Expectation Failed
+                        <br>418 I'm a teapot
+                        <br>421 Misdirected Request
+                        <br>422 Unprocessable Entity
+                        <br>423 Locked
+                        <br>424 Failed Dependency
+                        <br>426 Upgrade Required
+                        <br>428 Precondition Required
+                        <br>429 Too Many Requests
+                        <br>431 Request Header Fields Too Large
+                        <br>444 Connection Closed Without Response
+                        <br>451 Unavailable For Legal Reasons
+                        <br>499 Client Closed Request
+                    
+                    <br><br>
+                    V. Server-Error (5xx)
+                        <br>
+                        <br>500 Internal Server Error
+                        <br>501 Not Implemented
+                        <br>502 Bad Gateway
+                        <br>503 Service Unavailable
+                        <br>504 Gateway Timeout
+                        <br>505 HTTP Version Not Supported
+                        <br>506 Variant Also Negotiates
+                        <br>507 Insufficient Storage
+                        <br>508 Loop Detected
+                        <br>510 Not Extended
+                        <br>511 Network Authentication Required
+                        <br>599 Network Connect Timeout Error
+                    
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTTP EXTENSIONS</h2>
+                <p>
+                    - Enables the defining of new request methods, message headers or status codes.
+                    <br>- WebDAV(Web Distributed Authoring and Versioning) is one such extension
+                </p>
+            </div>
+        </div>
+        
+        <div class="title">
+            <h1 id="html">Hypertext Markup Language</h1>
+        </div>
+        
+        <div class="content">
+            <div class="topics">
+                <br>
+                <h2>WHAT IS HTML?</h2>
+                <p>
+                    HTML is a language used to mark-up webpages in the World Wide Web. 
+                    <br><br>
+                    It is an application of Standard Generalized Markup Language (SGML),a language used to define markup 
+                    languages or a meta-language ,which is a standard revolving around the concept of structures existing in documents. 
+                    <br><br>
+                    HTML has been used to specify the structure and content of webpages in the web, as well as its aesthetics but was later
+                    on depricated due to the existence and dominance of style sheets.
+                    <br><br>
+                    Semantic VS. Non-Semantic Coding:
+                    <br>• Semantic Coding refers to utilizing elements of a document the way they're intended to be used.
+                    <br>• Non-semantic coding, on the other hand, uses different elements and entities of a document in a
+		nonconventional manner or in a way which defies its purpose, usually for presentational aspects.
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTML VERSIONS</h2>
+                <p>
+                    1. HTML 1.0
+                        <br>- first release of HTML in the world (1991)
+                        <br>- a hybrid of SGML
+                        <br>- language is limiting
+                    
+                    <br><br>
+                    2. HTML 2.0
+                        <br>- released in 1994
+                        <br>- first official set of standards for HTML
+                    
+                    <br><br>
+                    3. HTML 3.0
+                        <br>- Netscape adde new proprietary tags(only works on certain browsers) which pushed David Raggett to add more abilities to HTML
+                    
+                    <br><br>
+                    4. HTML 3.2
+                        <br>- first version to be released as a W3C recommendation
+                    
+                    <br><br>
+                    5. HTML 4.0
+                        <br>- last iteration of the classic html
+                        <br>- in 1998, it became the official standard
+                        <br>- supports cascading style sheets
+                    
+                    <br><br>
+                    6. HTML 4.01
+                        <br>- corrected HTML 4.0 and became HTML 4.01
+                        <br>- final version of HTML 4.0
+                    
+                    <br><br>
+                    7. XHTML (2002-2003)
+                        <br>- Coming from the flexible world of HTML, W3C wanted to make things more stricter by adding xml to html and calling it XHTML. The intentions were good but it was not used by most developers that were used to the 	flexibility of HTML and even by browsers because of the big discrepancy of what was already existing.
+                        <br>- XHTML has all the elements and attributes of HTML but with stricter implementations. 
+                    
+                    <br><br>
+                    8. HTML5
+                        <br>- Ian Hickson started a breakaway group from XHTML, forming the group WHATWG. They aimed to put a cease to the strict implementations of XHTML and bring back what developers were used to  and what browsers already supported, which was HTML, and modernize the language. The group considered this to be a more pragmatic approach to further developing the technology, rather than XHTML, which was an abrupt change. 
+                        <br><br>
+                        Initially, W3C did not support the idea and disapprove of the proposal which lead to them creating the breakaway group. Since, HTML5 became more popular with developers because of its backward compatibility, W3C eventually supported the idea and joined the group in 2006. The first draft of HTML was released in 2008, editor being Ian Hickson. Their projection was that HTML5 would be a specification in the year 2022, but the adoption to HTML5 was rapid. Reasons HTML5 was easily adapted includes the huge development in mobile technology, and the death of Flash technology, thanks to the late Steve Jobs that declared they would not be using it in their IOS devices. The first standard recommendation for HTML5 was in 2014, way earlier than the projected year.
+                        <br>- HTML5 is a combination of HTML4, XHTML and the DOM(Document Object Model) technology. Meaning there are two ways of writing in HTML5, the flexible way or the more stricter way. The name XHTML5 was considered but then later on disregarded.
+                        <br>- HTML5.1(2016) and HTML5.2(2017) included minor revisions.
+                    
+               </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTML DOCUMENT STRUCTURE</h2>
+                <p>
+                    • VERSION INFORMATION (DOCTYPE)
+                    <br><br>
+                    - DOCTYPE is used to indicate that the document is following standards, which would enable browsers to render the document in standards mode rendering. Quirks mode rendering in browsers are used for "malformed" documents, with no DOCTYPE heading.Different browsers may have different ways of rendering in quirks mode. An example that leads to a documents invalidity or malformity is misnesting of tags. 3 flavors of HTML4 are strict, transitional and framesets and have longer DOCTYPE headings.
+                    <br><br>
+                    • ROOT ELEMENTS (head and body element)
+                    <br>-head element containts declarative section that contains document metadata, such as the title of the document or linking other documents needed like stylesheets.
+                    <br>-body element is what the users sees when opened in a browser
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTML DOCUMENT COMPONENTS</h2>
+                <p>
+                    - HTML5 is case-insensitive.
+                    <br>- an html element comprises of tags, attributes and content. &lt;h1&gt; WebTechLec &lt;&frasl;h1&gt; is an element and is not just a tag.
+                    <br><br>
+                    • TAGS
+                    <br>- HTML tags define every structure on an HTML page. Most HTML tags have two parts an opening tag and closing tag. 
+                    <br><br>
+                    • CONTENT
+                    <br>- Content Model
+                    <br>- Each element has their specified content models which simply defines what it can contain, usually texts and also other elements. Knowing this can help follow standards and not always having to render and check the validity of HTML documents. 
+                    <br>- Elements wih no content are called void elements.
+                    <br><br>
+                    • ATTRIBUTES
+                    <br>- These are placed in start/beginning tags and are specifications of other information. 
+                </p>
+                <br><br>
+                <p>
+                    1. Global Attributes
+                        <br>- applied across the board or for all elements.
+                    
+                    <br><br>
+                    2. Custom/Non-Visible Data Attributes
+                        <br>- defines own attributes and is not standardize, meaning other browsers may not support it or the name is already being used by that browser.
+                    
+                    <br><br>
+                    3. WAI-ARIA Attributes
+                        <br>- Web Accessibility Initiative - Accessible Rich Internet Applications attributes specifies ways to boost accesibility of HTML for people with constraints when using the web, in other words, help when dealing with assistive technology. 
+                    
+                    <br><br>
+                    4. Element-Specific Attributes
+                        <br>- Attributes which pertain to certain elements.
+                        <br><br>
+                        • MathML (Mathematical Markup Language)
+                        <br>- another standard published by W3C
+                        <br><br>
+                        • SVG (Scalable Vector Graphic)
+                        <br>- Bitmap graphics represent individual pixels which can lead to degraded quality when scaled.
+                        <br>- SVG is another specification of W3C represents larger components, such as a rectangle, triangle or a circle.
+                        <br>- SVG can be scaled without incurring quality loss and perform animations easily.
+                        <br><br>
+                        • Character References
+                        <br>- Other representations of characters, such as characters not found in a normal keyboard, colors, and mathematical symbols.  
+                        <br><br>
+                        • Comments
+                        <br>- An HTML comment begins with "&lt;!––" and is closed with "––&gt;"
+                    
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>HTML PREPROCESSORS</h2>
+                <p>
+                    Languages to have HTML written in a certain way and processed by a tool that would turn it into normal HTML. (e.g. Pug)
+                </p>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>ADDITIONAL NOTES</h2>
+                <p>
+                    Nowadays, most applications are moving to the web. Which has a lot of advantages, such as being server-based and having a cheap entry point, which is a browser. But disadvantages still exists, example is not accessible without the Internet.
+                    <br><br>
+                    Always follow standards and validate documents. Validation of HTML documents is important, specially for front-end developers.	
+                </p>
+            </div>
+        </div>
+        
+        <footer>&copy; Web Systems and Technologies 2018| Group 6</footer>
+    </body>
+</html>
