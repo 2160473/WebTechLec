@@ -88,6 +88,7 @@ HTML DOCUMENT COMPONENTS
 3. WAI-ARIA Attributes
     - Web Accessibility Initiative - Accessible Rich Internet Applications attributes specifies ways to boost accesibility of HTML for people with constraints
     when using the web, in other words, help when dealing with assistive technology.    
+    
 4. Element-Specific Attributes
   	- Attributes which pertain to certain elements.
 
@@ -108,6 +109,6 @@ HTML DOCUMENT COMPONENTS
 HTML PREPROCESSORS
 - language to have HTML written in a certain way and processed by a tool that would turn it into normal HTML.
 
-**Nowadays, most applications are moving to the web. Which has alot of advantages, such as being server-based and having a cheap entry point, which is a browser. But 
+**Nowadays, most applications are moving to the web. Which has a lot of advantages, such as being server-based and having a cheap entry point, which is a browser. But 
   disadvantages still exists, example is not accessible without the Internet.
 **Always follow standards and validate documents. Validation of HTML documents is important, specially for front-end developers. 
