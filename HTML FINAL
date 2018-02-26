@@ -1,4 +1,14 @@
 HTML (Hypertext Markup Language)
+
+	HTML is a language used to mark-up webpages in the World Wide Web. 
+
+	It is an application of Standard Generalized Markup Language (SGML),a language used to define markup 
+	languages or a meta-language ,which is a standard revolving around the concept of structures existing in documents. 
+	
+	HTML has been used to specify the structure and content of webpages in the web, as well as its aesthetics but was later
+	on depricated due to the existence and dominance of style sheets.
+
+ <!-- 
  - a language that is used to mark-up webpages in the world wide web
  - application of SGML
  - SGML(Standard Generalized Markup Language)
@@ -6,11 +16,17 @@ HTML (Hypertext Markup Language)
 		- language used to define mark-up languages (Meta-language)
  - HTML has been used to specify the structure and content of webpages as well as its aesthetics
  - Nowadays, you should solely specify the structure and content of the webpages because a separate technology can be used to manipulate the aesthetics of a webpage called Style Sheets
+-->
 
 
 *Semantic VS. Non-Semantic Coding
- Semantic - using codes the way they're intended to be used.
- Non-semantic - using codes the way they are not intented to be used ( commonly for presentational aspects)
+ 	Semantic 
+		Semantic Coding refers to utilizing elements of a document the way they're intended to be used.
+		<!-- using codes the way they're intended to be used.-->
+		
+		Non-semantic coding, on the other hand, uses different elements and entities of a document in a
+		nonconventional manner or in a way which defies its purpose, usually for presentational aspects.
+		<!--Non-semantic - using codes the way they are not intented to be used ( commonly for presentational aspects)-->
 
 HTML VERSIONS:
 1. HTML 1.0
