@@ -2,7 +2,7 @@ body {
     font-size: 62.5%;
     margin: 0px;
     padding: 0px;
-    background-image: url(home-1.jpg);
+    background-image: url("home-1.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -14,14 +14,21 @@ body {
     src: url("heart.ttf");
 }
 
+
 @font-face {
     font-family: dense;
     src: url("dense.otf");
 }
 
+
 @font-face {
     font-family: ft81;
     src: url("ft81.ttf");
+}
+
+@font-face {
+    font-family: proxima;
+    src: url("proxima.otf");
 }
 
 .menu ul {
@@ -29,11 +36,12 @@ body {
     overflow: hidden;
     background-color: white;
     font-family: ft81;
-    top: 0;
     width: 100%;
     margin: 0px;
     padding: 0px;
     text-align: justify;
+    position: fixed;
+    top: 0;
 }
 
 .menu li a {
@@ -45,17 +53,18 @@ body {
     font-weight: 600;
 }
 
-.menu li a:hover { 
+.menu li a:hover {
     color: black;
-    background-color: antiquewhite;
+    background-color: aliceblue;
     transition: 0.3s ease;
 }
 
 .face {
-    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
     margin-left: 15%;
-    margin-right: 15%;
-    background: rgba(255, 255, 255, .6);
+    margin-right: 15%;    
+    text-align: center;
+    margin-top: 10%;
 }
 
 .face h1 {
@@ -64,33 +73,13 @@ body {
     vertical-align: middle;
     padding-bottom: 0;
     margin-bottom: 0;
+    color: #333333;
 }
 
 .face p {
     font-family: ft81;
     font-size: 3em;
-}
-
-.face button {
-    background-color: #FFB091;
-    border: none;
-    border-radius: 25px;
-    color: black;
-    padding: 8px 20px;
-    margin: 4px 2px;
-    text-align: center;
-    font-size: 1.5em;
-    transition: 0.3s ease;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: Garamond;
-    margin-bottom: 2%;
-    opacity: 0.7;
-}
-
-.face button:hover {
-    opacity: 1;
+    padding-bottom: 4%;
 }
 
 .desc {
@@ -102,10 +91,11 @@ body {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     margin-top: 3%;
+    text-align: center;
 }
 
 .notes {
-    background: rgba(255, 243, 237, 0.9);
+    background: rgba(240, 255, 250, 0.9);
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 3%;
@@ -117,28 +107,98 @@ body {
     font-size: 8em;
     text-align: center;
     padding: 2%;
+    color: #333333;
 }
 
-.topics img {
-    width: 7.5%;
-    height: 15%;
-    margin-left: 22%;
-    margin-right: auto;
-    margin-top: 0px;
+.term {
     float: left;
-}
-.topics h3 {
-    margin-bottom: 0px;
-    font-family: ft81;
-    background-color: white;
-    margin-left: 29.5%;
-    margin-right: 20.5%;
-    text-align: center;
-    font-size: 2em;
-    padding: 2%;
+    width: 33.33%;
 }
 
-.topics:after {
+.term h3 {
+    font-family: heart;
+    font-size: 4em;
+    color: #333333;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url(notepad.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.term:nth-child(2) h3 {
+    background-image: url(notepad2.png);
+}
+
+.term:nth-child(3) h3 {
+    background-image: url(notepad3.png);
+}
+
+.row {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about {
+    background: rgba(255, 255, 255, 0.6);
+    margin-left: 15%;
+    margin-right: 15%;    
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.about h1 {
+    font-family: heart;
+    font-size: 8em;
+    vertical-align: middle;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 4%;
+    color: #333333;
+}
+
+.about p {
+    font-family: garamond;
+    font-size: 3em;
+    padding-bottom: 4%;
+}
+
+.team {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.person {
+    width: 48%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    float:left;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.person img {
+    width: 100%;
+}
+
+.person p {    
+    font-family: proxima;
+    font-size: 2em;
+}
+
+.team:after {    
     content: "";
     display: table;
     clear: both;
