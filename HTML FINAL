@@ -58,14 +58,17 @@ HTML VERSIONS:
 	  - XHTML has all the elements and attributes of HTML but with stricter implementations. 
 
 8. HTML5
-    - Ian Hickson started a breakaway group from XHTML, forming the group WHATWG. They aimed to stop the nonesense of XHTML and bring back what developers were used to
-  and what browsers already supported, which was HTML, and modernize the language. The group considered this to be a more pragmatic approach to further developing the
-  technology, rather than XHTML, which was an abrupt change. Initially, W3C did not support the idea and disapprove of the proposal which lead to them creating the
+    - Ian Hickson started a breakaway group from XHTML, forming the group WHATWG. They aimed to put a cease to the strict implementations of XHTML
+    and bring back what developers were used to  and what browsers already supported, which was HTML, and modernize the language. The group considered this to be a more pragmatic approach to further developing the
+  technology, rather than XHTML, which was an abrupt change. 
+  
+  Initially, W3C did not support the idea and disapprove of the proposal which lead to them creating the
   breakaway group. Since, HTML5 became more popular with developers because of its backward compatibility, W3C eventually supported the idea and joined the group in
   2006. The first draft of HTML was released in 2008, editor being Ian Hickson. Their projection was that HTML5 would be a specification in the year 2022, but the
   adoption to HTML5 was rapid. Reasons HTML5 was easily adapted includes the huge development in mobile technology, and the death of Flash technology, thanks to the
   late Steve Jobs that declared they would not be using it in their IOS devices. The first standard recommendation for HTML5 was in 2014, way earlier than the projected
   year.
+  
     - HTML5 is a combination of HTML4, XHTML and the DOM(Document Object Model) technology. Meaning there are two ways of writing in HTML5, the flexible way or the more 
   stricter way. The name XHTML5 was considered but then later on disregarded.
     - HTML5.1(2016) and HTML5.2(2017) included minor revisions.
@@ -120,7 +123,7 @@ HTML DOCUMENT COMPONENTS
 - Other representations of characters, such as characters not found in a normal keyboard, colors, and mathematical symbols.  
 
 *Comments
-- An HTML comment begins with <!–– and is closed with ––>
+- An HTML comment begins with "<!––" and is closed with "––>"
 
 HTML PREPROCESSORS
 - language to have HTML written in a certain way and processed by a tool that would turn it into normal HTML.
