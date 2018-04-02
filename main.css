@@ -261,7 +261,7 @@ footer {
     margin-bottom: 0px;
 }
 
-.topics p, ol{
+.topics p, ul, ol{
     margin-top: 0px;
     background-color: white;
     padding-left: 3%;
@@ -269,4 +269,12 @@ footer {
     padding: 3%;
     font-family: times new roman;
     font-size: 2em; 
+}
+
+.topics ul, ol {
+	padding-left: 5%;
+}
+
+.topics li > ol {
+    font-size: 1em;
 }
