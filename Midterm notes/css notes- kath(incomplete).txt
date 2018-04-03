@@ -60,8 +60,6 @@ body {
 
 
 
-
-
 B. Atomic Properties / Individual Properties
 
 
@@ -69,3 +67,98 @@ B. Atomic Properties / Individual Properties
 
 
 *Vendor Specific Extensions
+
+
+
+------------------------------------------
+<!-- exact things written in m notes, will edit into a more understandable block of info -->
+<!-- ako rin lang naman mamomroblema since ako magbibigay kung ano istura ng website -->
+
+Scripting:
+1. Client-side
+	- browser
+	- user agents
+	- using : Javasctipt
+	- alternatives: flash, applets, activeX
+
+2. Server-side
+
+-----------------------------
+
+Javascript
+	- fetched w/ other webpage resources
+	- execution : browser
+
+1.) HOW?
+
+	<script type = "text/javascript" src = "path/to/script.js"> </script>
+	
+	-can be placed anywhere
+	- before rendering can continue, scripts must be fetched, compiled and executed
+	- functionality used upon interaction
+	
+	**Mobile: impatient proplr; connectivity issues
+	** First page slowly loading -> other website
+	
+	EXTENSIONS: DEFER VS ASYNC	
+		- attribtes
+
+	Defer : fetch the sript while rendering; execute after render finishes
+	Async: Fetch then render; upon availability, execute
+
+	** browsers may have no support for attributes
+		alternative solution: place at the end of the document
+
+	EMBED a.k.a. Internal Script
+	<scipt ...> </script
+
+
+	2 code (?)
+		1. Top-level (outside of functions) - executed as script is loaded, when encountered
+		2. inside functions - only executed when invoked.
+
+
+	Inline scripts
+		- inside html elements
+		- starts with "on" (e.g. onClick)
+		- event attributes
+		- "alert()" -> dialog box
+
+	<noscript> element: alternative content (if browser doesn't support scripting / disabled)
+
+-------------------------------------
+
+JS Exec environment
+	-> all codes combined and associated with a page (only 1 page)
+	-> local storage
+
+----------------------------------
+Client-side
+	1. Core Javascript (EcmaScript)
+		<!-- Ecma-262; Mdn-javascript @ Netscape -->
+		Languages & API
+
+	2. BOM API (non-standard)
+		- window(global), navigator(browser itself), screen (current screen), location (URL), History (browser history)
+
+	3. DOM : elements 
+	4. Misc
+		- Geolocation, IndexedDB, Local Storage, Push Notif, ServiceWorkers, Sockets, Work(di ko maintindihan sulat ko jusq), XMLHttpRequest (AJAX)
+
+-------------------------------
+DOM
+	-access to HTML document w/in scipts associated with webpages
+	-> W3C dom 
+	Interfaces: type, nodes (primary data type)
+	
+	Document Type - nodes
+
+	DOM -> text vs CSSOM -> elements
+---------------------
+Funcionalities:
+	Acess NodeName == tagname
+	nodeType = 1 (element node)
+	nodeValue = null -> elements : always null
+	a
+
+
