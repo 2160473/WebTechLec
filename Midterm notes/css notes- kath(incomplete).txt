@@ -5,7 +5,9 @@ CSS HISTORY
 
 
 CSS RULE PREFERENCE
-
+ - mag-aadd pa ako dito 
+ 
+ 
 CSS DECLARATIONS
 
 - a CSS rule-set is divided into two; a selector and a declaration block
