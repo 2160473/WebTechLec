@@ -1,4 +1,7 @@
 CSS HISTORY
+ - cascading style sheets
+ 	- used in formatting the layout of web pages
+	-
  -written by Marc Andreesen in 1994 
  - declarative programming language
 	- rules for the HTML documentare described one by one and browses handle the rendering
@@ -64,11 +67,7 @@ body {
 
 B. Atomic Properties / Individual Properties
 
-
-
-
-
-*Vendor Specific Extensions
+ *Vendor Specific Extensions
 
 
 
@@ -78,7 +77,7 @@ B. Atomic Properties / Individual Properties
 
 Scripting:
 1. Client-side
-	- browser
+	- creating programs intended to run in the browser environment
 	- user agents
 	- using : Javasctipt
 	- alternatives: flash, applets, activeX
