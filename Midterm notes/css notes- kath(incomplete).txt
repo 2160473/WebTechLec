@@ -86,22 +86,27 @@ Scripting:
 -----------------------------
 
 Javascript
+	- most used scripting language for client side web scripting
 	- fetched w/ other webpage resources
 	- execution : browser
 
-1.) HOW?
+
+
+
+
+LINKING SCRIPTS:
+  sCRIPT ELEMENT
 
 	<script type = "text/javascript" src = "path/to/script.js"> </script>
-	
 	-can be placed anywhere
 	- before rendering can continue, scripts must be fetched, compiled and executed
 	- functionality used upon interaction
 	
-	**Mobile: impatient proplr; connectivity issues
+	**Mobile: impatient people; connectivity issues
 	** First page slowly loading -> other website
 	
 	EXTENSIONS: DEFER VS ASYNC	
-		- attribtes
+		- attributes
 
 	Defer : fetch the sript while rendering; execute after render finishes
 	Async: Fetch then render; upon availability, execute
@@ -110,18 +115,19 @@ Javascript
 		alternative solution: place at the end of the document
 
 	EMBED a.k.a. Internal Script
+		- can be placed anywhere in the document
 	<scipt ...> </script
 
 
-	2 code (?)
+	2 Types of Javascript 
 		1. Top-level (outside of functions) - executed as script is loaded, when encountered
 		2. inside functions - only executed when invoked.
 
 
 	Inline scripts
 		- inside html elements
-		- starts with "on" (e.g. onClick)
 		- event attributes
+			- starts with "on" (e.g. onClick)
 		- "alert()" -> dialog box
 
 	<noscript> element: alternative content (if browser doesn't support scripting / disabled)
