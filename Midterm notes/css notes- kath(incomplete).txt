@@ -68,12 +68,32 @@ body {
 B. Atomic Properties / Individual Properties
 
  *Vendor Specific Extensions
+ 	- vendor prefixes 
+	- vendor specific extensions are usd by browser as a prefix for the names of experimental (non-standard) css properties
+		e.g -webkit-
+		
+CSS PREPROCESSORS, FRAMEWORKS, AND POLYFILLS
+
+* CSS PREPROCESSORS
+
+
+*CSS FRAMEWORKS 
+	- provides pre-defined css design funvtionality that can be reused, extended or customized
+		e.g. bootstrap etc.
+
+* CSS POLYFILLS
+	- provides features that deveopers expect browsers to provide natively
+		e.g. modernizr etc.
 
 
 
 ------------------------------------------
 <!-- exact things written in m notes, will edit into a more understandable block of info -->
 <!-- ako rin lang naman mamomroblema since ako magbibigay kung ano istura ng website -->
+
+
+PROGRAMMING IN THE WEB
+
 
 Scripting:
 1. Client-side
@@ -96,7 +116,8 @@ Javascript
 
 
 LINKING SCRIPTS:
-  sCRIPT ELEMENT
+*associating scripts with our webpage
+  Script element
 
 	<script type = "text/javascript" src = "path/to/script.js"> </script>
 	-can be placed anywhere
@@ -142,6 +163,7 @@ JS Exec environment
 ----------------------------------
 Client-side
 	1. Core Javascript (EcmaScript)
+				- standardized version of javascript
 		<!-- Ecma-262; Mdn-javascript @ Netscape -->
 		Languages & API
 
