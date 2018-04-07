@@ -55,6 +55,9 @@
 					<li>A language used for web programming.</li>
 					<li>Serves as a client side script/program which is stored in the server and linked with a webpage.</li>
 					<li>Invented at Netscape.</li>
+					<li> Alternatives to JavaScript : <a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/"> flash </a>, 
+					<a href="https://docs.oracle.com/javase/7/docs/api/java/applet/Applet.html"> applets </a> , and 
+					<a href= "https://msdn.microsoft.com/en-us/library/office/ms440037(v=office.14).aspx"> activeX </a> </li>
 					<li>Alternative languages: clash & vbscript</li>
 				</ul>
             </div>
@@ -64,6 +67,7 @@
                 <h2>SCIPT PLACEMENTS</h2>
 				<ul>
 					<li>Linked/External
+						<br>&lt; script type='text/javascipt' src='path/to/script.js' %gt;  &lt; /script &gt;
 						<br>- <b>Problem:</b> Before continuing rendering the page, the browser would have to first completely fetch and compile the script. 
 							This is important to take note of because a second latency in loading a page will have a big impact, especially to users.
 						<br>- <b>Attributes:</b>
@@ -72,17 +76,21 @@
 								<br>- means to fetch the script after the page has loaded regardless of placement in the script</li>
 							<li>async
 								<br>- means to fetch the script then load the page while waiting for the script to be fetched. Once it has been fetched, continue with parsing the script.</li>
+							<br>	Note: some browsers don't have support for these attributes. As an alternative solution to the problem, scripts may be placed at the end of the page.
 							</ol>
 					</li>
 					<li>Embedded/Internal
-						<br>- script that is placed anywhere in the HTML document.</li>
+						<br>- script that is placed anywhere in the HTML document, particularry in between &lt; script &gt; &lt; /script &gt;</li>
 					<br>
 					<li>Inline
-						<br>- usual prefix is 'on'.
-						<br>- invoke a method.</li>
+						<br>- invoke a method.
+						<br>- values are placed inside html elements.
+						<br>- These are usually event attributes and are triggered when users interact with the document.
+						<br>- usual prefix is 'on' (e.g. onclick).
+					</li>	
 					<br>
 					<li>&lt; noscript &gt;
-						<br>- used when a browser does not support scripting or is disabled.</li>
+						<br>- provides alternate content and is used when a browser does not support scripting or is disabled.</li>
 				</ul>
             </div>
             
@@ -90,14 +98,16 @@
                 <br>
                 <h2>JAVASCRIPT EXECUTION ENVIRONMENT</h2>
 				<ol>
-					<li>Core JavaScript(ExmaScript) Language and API</li><br>
-					<li>Browser Object Model API
+					<br> An avenue wherein all codes are combined and associated within a single page.
+					<li>Core JavaScript(<a href = "https://www.ecma-international.org/ecma-262/8.0/index.html"> EcmaScript </a>) Language and API</li><br>
+					<li>Browser Object Model API (non-standardized)
 						<br>- using the console of the browser.
-						<br>- Window, Navigator, Screen, Location, History</li><br>
+						<br>- Window (global), Navigator(the browser itself), Screen(current screen), Location(URL), History</li><br>
 					<li>Document Object Model API
 						<ul>
 							<li>Most important API for client-side scripting.</li>
-							<li>It is managed by W3C.</li>
+							<li> access to HTML document within scripts associated with the webpage. </li>
+							<li>It is managed by <a href="https://www.w3.org/DOM/DOMTR"> W3C. </a> </li>
 							<li>Nodes
 								<br>- primary data type of DOM.
 								<br>- represents HTML document components
@@ -110,7 +120,14 @@
 								<br>- Manipulate the DOM tree.</li>
 						</ul></li>
 					<li>Miscellaneous
-						<br>- Geolocation, IndexDB, Local Storage, Push Notifications, Service Workers, Web Sockets, Web Workers, XMLHttpRequest(AJAX)</li>
+						<br>-<a href = "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation"> Geolocation </a> , 
+						<a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API"> IndexedDB </a> , 
+						<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Local Storage </a> , 
+						<a href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"> Push Notifications </a> , 
+						<a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API"> Service Workers </a> , 
+						<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"> Web Sockets </a> , 
+						<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers"> Web Workers </a> , 
+						<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest"> XMLHttpRequest(AJAX) </a></li>
 				</ol>
             </div>
 			
