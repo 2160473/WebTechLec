@@ -174,11 +174,11 @@
 						<br>- 'arguments' object is like an array object that corresponds to the arguments being passed to a function and can only be used inside of that function.
 						<br>- Provides the capability to pass functions as arguments on other functions.
 						<br>- Nesting functions are also available with the intention of decluttering. 
-						<br>ex. <i>&emsp;function x (){
-						<br>&emsp;&emsp;function y (){}
-						<br>&emsp;&emsp;//function y is accessible at this point
-						<br>&emsp;}
-						<br>&emsp;//function y is already inaccessible at this point</i></li>
+						<br><i>&emsp;&emsp;function x (){
+						<br>&emsp;&emsp;&emsp;function y (){}
+						<br>&emsp;&emsp;&emsp;//function y is accessible at this point
+						<br>&emsp;&emsp;}
+						<br>&emsp;&emsp;//function y is already inaccessible at this point</i></li>
 					<br>
 					<li>Arrays
 						<br>- It has dynamic sizing.
