@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <title>Web Systems and Technologies</title>
+    </head>
+    
+    <body>
+        <header class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#css">CSS</a></li>
+					<li><a href="#javascript">JavaScript</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="title">
+            <h1 id="css">Cascading Style Sheet</h1>
+        </div>
+        
+        
+        <div class="content">
+            <div class="topics">
+                <br>
+                <h2>WHAT IS CSS?</h2>
+				<ul>
+					<li>written by Marc Andreesen in 1994 </li> 
+                </ul>
+            </div>
+        </div>
+        
+        <div class="title">
+            <h1 id="javascript">Javascript</h1>
+        </div>
+        
+        <div class="content">            
+            <div class="topics">
+                <br>
+                <h2>PROGRAMMING IN THE WEB</h2>
+				<ul>
+					<li>Server-side Programming</li>
+					<li>Client-side Programming
+						<br>-running on the user-agent</li>
+				</ul>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>WHAT IS JAVASCRIPT?</h2>
+                <ul>
+					<li><i>"Great flexibility comes with errors."</i></li>
+					<li>A language used for web programming.</li>
+					<li>Serves as a client side script/program which is stored in the server and linked with a webpage.</li>
+					<li>Invented at Netscape.</li>
+					<li>Alternative languages: clash & vbscript</li>
+				</ul>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>SCIPT PLACEMENTS</h2>
+				<ul>
+					<li>Linked/External
+						<br>- <b>Problem:</b> Before continuing rendering the page, the browser would have to first completely fetch and compile the script. 
+							This is important to take note of because a second latency in loading a page will have a big impact, especially to users.
+						<br>- <b>Attributes:</b>
+							<ol>
+							<li>defer
+								<br>- means to fetch the script after the page has loaded regardless of placement in the script</li>
+							<li>async
+								<br>- means to fetch the script then load the page while waiting for the script to be fetched. Once it has been fetched, continue with parsing the script.</li>
+							</ol>
+					</li>
+					<li>Embedded/Internal
+						<br>- script that is placed anywhere in the HTML document.</li>
+					<li>Inline
+						<br>- usual prefix is 'on'.
+						<br>- invoke a method.</li>
+					<li>&lt; noscript &gt;
+						<br>- used when a browser does not support scripting or is disabled.</li>
+				</ul>
+            </div>
+            
+            <div class="topics">
+                <br>
+                <h2>JAVASCRIPT EXECUTION ENVIRONMENT</h2>
+				<ol>
+					<li>Core JavaScript(ExmaScript) Language and API</li>
+					<li>Browser Object Model API
+						<br>- using the console of the browser.
+						<br>- Window, Navigator, Screen, Location, History</li>
+					<li>Document Object Model API
+						<ul>
+							<li>Most important API for client-side scripting.</li>
+							<li>It is managed by W3C.</li>
+							<li>Nodes
+								<br>- primary data type of DOM.
+								<br>- represents HTML document components<
+								<br> ex. document node, document type node, element node & text node
+								<br> note: white spaces are considered as text nodes.</li>
+							<li>Functionalities
+								<br>- Retrieve references to nodes.
+								<br>- Traverse the DOM tree.
+								<br>- Construct or copy nodes.
+								<br>- Manipulate the DOM tree.</li>
+						</ul></li>
+					<li>Miscellaneous
+						<br>- Geolocation, IndexDB, Local Storage, Push Notifications, Service Workers, Web Sockets, Web Workers, XMLHttpRequest(AJAX)</li>
+				</ol>
+            </div>
+			
+			<div class="topics">
+				<br>
+				<h2>JAVASCRIPT LANGUAGE FUNDAMENTALS</h2>
+				<ol>
+					<li>Variables and Constants
+						<br>- Does not need to declare the data type.
+						<br>- Javascript is loosely and dynamically typed, meaning reassigning variable values can change their datatype.
+						<br> var globalVar;	//global scope; becomes a new property
+						<br> let someVar; //global scope; does not become a new property
+						<br> const COURSE= 'webtech' //global scope; does not become a new property
+						<br> avoidThis = 100; //global reference to Window property
+						<br><b>PRIMITIVE TYPES</b>
+							<ul>
+								<li>Numbers
+									<br>Special Numbers:
+									<br>	- 1/0 = infinity
+									<br>	- -1/0 = -infinity
+									<br>	- 0/0 = NaN</li>
+								<li>Strings
+									<br>- can be enclosed in a single quote or double quote.
+									<br>- can also use template literals.</li>
+								<li>Booleans
+									<br>- 0, "", false, null, undefined & NaN are considered false.</li>
+								<li>Null</li>
+								<li>Undefined</li>
+								<li>Symbols</li>
+							</ul></li>
+					<li>Functions
+						<br>- first class objects 
+						<br>- if no return is done, the return value would be undefined.</li>
+					<li>Arrays</li>
+					<li>User-defined Objects</li>
+				</ol>
+			</div>
+			
+			<div class="topics">
+				<br>
+				<h2>EVENT HANDLING</h2>
+				<ol>
+					<li>Event Propagation</li>
+					<li>Event Handler Registration</li>
+					<li>Event Object Properties & Methods</li>
+					<li>Creating & Dispatching Events</li>
+				</ol>
+			</div>
+        </div>        
+        <footer>&copy; Web Systems and Technologies 2018| Group 6</footer>
+    </body>
+</html>
