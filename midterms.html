@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="main.js"></script>
         <title>Web Systems and Technologies</title>
     </head>
     
@@ -23,25 +24,26 @@
         
         
         <div class="content">
-            <div class="topics">
+            <button class="headline">WHAT IS CSS?</button>
+            <div class="info">
                 <br>
-                <h2>WHAT IS CSS?</h2>
 			<ul>
 				<li> Labelled as a declarative programming language, Cascading Style Sheets (CSS) are used in formatiing the layout of a webpage wherein rules for HTML documents are described one by one as browsers handle their rendering. </li>				 
         		</ul>
 		<br>
 		 </div>
-		<div class="topics">
-		    <h2> CSS HISROTY </h2>
+			
+		<button class="headline"> CSS HISTORY </button>
+		<div class="info">
 		    <ul>
 			   <li>written by Marc Andreesen in 1994 </li>
 		    </ul>
 		    
 		    <br>
 		</div>
-		<div class="topics">
-		   
-		    <h2> CSS DECLARATIONS </h2
+
+		<button class="headline"> CSS DECLARATIONS </button>
+		<div class="info">
 			    <ul>
 			    	<li> - a CSS rule-set is divided into two; a selector and a declaration block 
 					<br> 
@@ -53,7 +55,6 @@
 					<br><em> ** CSS Declarations always end with a semi-colon </em>
 					<br> 
 					<br> </li> 
-					<ul> 
 						<li> Shorthand Properties
  							<br> - allows authors to specify multiple values
      							<br> - one example of a shorthand property is the CSS background propery, that able's to define values of
@@ -104,27 +105,30 @@
  						<br> - vendor prefixes 
 						<br> - vendor specific extensions are usd by browser as a prefix for the names of experimental (non-standard) css properties (e.g -webkit-)
 					</li> 		
-			    </ul>
-			    
-			    </ul> 
+			    </ul>    
 		</div>
-		<div class="topics">
-		    <h2> CSS PREPROCESSORS </h2>
+			
+		<button class="headline"> CSS PREPROCESSORS </button>
+		<div class="info">
 		    <ul> 
 			    <li> ... </li>
 		    </ul>
 		    <br>
 		</div>   
-		<div class = "topics">
-		    <h2> CSS FRAMEWORKS </h2>
+			
+		
+		<button class="headline"> CSS FRAMEWORKS </button>
+		<div class = "info">
 		    <ul>
 			    <li> - provides pre-defined css design funvtionality that can be reused, extended or customized (e.g. bootstrap etc.). </li>
 		    </ul>
 		   
 		    <br>
 		</div>
-		<div class = "topics">
-		    <h2> CSS POLYFILLS </h2>
+		
+		
+		<button class="headline"> CSS POLYFILLS </button>
+		<div class = "info">
 		    <ul>
 			    <li> - provides features that deveopers expect browsers to provide natively (e.g. modernizr etc.) </li>
 		    </ul>
@@ -136,20 +140,20 @@
             <h1 id="javascript">Javascript</h1>
         </div>
         
-        <div class="content">            
-            <div class="topics">
+        <div class="content">    
+			<button class="headline">PROGRAMMING IN THE WEB</button>
+            <div class="info">
                 <br>
-                <h2>PROGRAMMING IN THE WEB</h2>
 				<ul>
 					<li>Server-side Programming</li>
 					<li>Client-side Programming
 						<br>- running on the user-agent
-						</ul>
+				</ul>
             </div>
             
-            <div class="topics">
+			<button class="headline">WHAT IS JAVASCRIPT?</button>
+            <div class="info">
                 <br>
-                <h2>WHAT IS JAVASCRIPT?</h2>
                 <ul>
 					<li><i>"Great flexibility comes with errors."</i></li>
 					<li>A language used for web programming.</li>
@@ -160,22 +164,22 @@
 					<a href="https://docs.oracle.com/javase/7/docs/api/java/applet/Applet.html"> applets </a> , and 
 					<a href= "https://msdn.microsoft.com/en-us/library/office/ms440037(v=office.14).aspx"> activeX </a> </li>
 					<li>Alternative languages: clash & vbscript</li>
-		</ul>
-		<br>
 		<br>
 		    <b> HOW? </b>
 		    &lt; script type='text/javascipt' src='path/to/script.js' %gt;  &lt; /script &gt;
-		    <ul>
+                <br>
 			    <li> The script may be placed anywhere
 			    <li> It may implemented in two types: top-level (outside of a function, executed as the scrip is loaded) and inline (located inside a function, and is only executed when it is called).</li>	
 			    <li> The functionality of scripts are used upon interaction.</li>
 			    <li> Normally, before the rendering of a page continues, scripts are fetched, compiled and executed.</li>
 			    <li> Mobile users tend to be more impatient due to slow connectivity issues. When the first page of a website slowly loads, they tend to go to another site. Because scripts also contributes to the weight of the site, one must consider the placement and size of the script for it is one factor that affects user satisfaction. </li>
+                </ul>
             </div>
             
-            <div class="topics">
+			
+            <button class="headline">SCIPT PLACEMENTS</button>
+            <div class="info">
                 <br>
-                <h2>SCIPT PLACEMENTS</h2>
 				<ul>
 					<li>Linked/External
 						<br><i>&lt; script type='text/javascipt' src='path/to/script.js' &gt;  &lt; /script &gt;</i>
@@ -214,9 +218,10 @@
 				</ul>
             </div>
             
-            <div class="topics">
+			
+            <button class="headline">JAVASCRIPT EXECUTION ENVIRONMENT</button>
+            <div class="info">
                 <br>
-                <h2>JAVASCRIPT EXECUTION ENVIRONMENT</h2>
 		    <br> An avenue wherein all codes are combined and associated within a single page.
 				<ol>
 					<br>- An avenue wherein all codes are combined and associated within a single page.<br>&emsp;
@@ -255,9 +260,10 @@
 				</ol>
             </div>
 			
-	<div class="topics">
+			
+			<button class="headline">JAVASCRIPT LANGUAGE FUNDAMENTALS</button>
+			<div class="info">
 			<br>
-			<h2>JAVASCRIPT LANGUAGE FUNDAMENTALS</h2>
 			<ol>
 				<li>Variables and Constants
 
@@ -276,7 +282,7 @@
 					<br> &emsp; &emsp; &emsp; var localVar2; &emsp; //local function scope but only from this point onwards
 					<br> &emsp; &emsp; &emsp; let blockVar; &emsp; //block local scope 
 					<br> &emsp; &emsp; }
-					<br> &emsp; } </i> 
+					<br> &emsp; } </li> 
 					<br>
 					<ul>
 						<li>Primitive Types
@@ -356,12 +362,14 @@
 			</ol>
 		</div>
 		<br>
-		<div class ="topics">
-			<h2> COMPLEX DATA STRUCTURES </h2>
+			
+		<button class="headline"> COMPLEX DATA STRUCTURES </button>
+		<div class ="info">
 		</div>
 
-				<div class = "topics">
-				<h2>EVENT HANDLING</h2>
+			
+				<button class="headline">EVENT HANDLING</button>
+				<div class = "info">
 				<ol>
 					<li>Event Propagation
 						<ul>
@@ -410,10 +418,10 @@
 				</ol>
 			</div>
 			
-			<div class="topics">
-				<br>
-				<h2>AJAX(Asynchronous JavaScript and XML)</h2>
-				
+			
+			<button class="headline">AJAX(Asynchronous JavaScript and XML)</button>
+			<div class="info">
+				<br>				
 				<ul>
 					<li>XMLHttpRequest
 					<br>- Dynamically fetch from a server.
@@ -430,7 +438,24 @@
 					<br><i> var promise = new Promise(function(resolve,reject){});</i></li>
 				</ul>
 			</div>
-        </div>        
+        </div>       
+		
+		<script>
+			var acc = document.getElementsByClassName("headline");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+					if (panel.style.maxHeight){
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					}
+				});
+			}
+		</script>
         <footer>&copy; Web Systems and Technologies 2018| Group 6</footer>
     </body>
 </html>
