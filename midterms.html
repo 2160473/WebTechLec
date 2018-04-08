@@ -26,9 +26,109 @@
             <div class="topics">
                 <br>
                 <h2>WHAT IS CSS?</h2>
-				<ul>
-					<li>written by Marc Andreesen in 1994 </li> 
-                </ul>
+			<ul>
+				<li> Labelled as a declarative programming language, Cascading Style Sheets (CSS) are used in formatiing the layout of a webpage wherein rules for HTML documents are described one by one as browsers handle their rendering. </li>				 
+        		</ul>
+		<br>
+		 </div>
+		<div class="topics">
+		    <h2> CSS HISROTY </h2>
+		    <ul>
+			   <li>written by Marc Andreesen in 1994 </li>
+		    </ul>
+		    
+		    <br>
+		</div>
+		<div class="topics">
+		   
+		    <h2> CSS DECLARATIONS </h2
+			    <ul>
+			    	<li> - a CSS rule-set is divided into two; a selector and a declaration block 
+					<br> 
+					<br> h1 (selector) {color:yellow; font-size:14px;} (declaration)
+               				<br> property -- value -- property --value
+					<br>
+					<br> Selector - points to the HTML element you want to style
+					<br> Declaration Block - contains one or more declarations separated by semi-colons
+					<br><em> ** CSS Declarations always end with a semi-colon </em>
+					<br> 
+					<br> </li> 
+					<ul> 
+						<li> Shorthand Properties
+ 							<br> - allows authors to specify multiple values
+     							<br> - one example of a shorthand property is the CSS background propery, that able's to define values of
+							<br> - background-color
+							<br> - background-image
+							<br> - background-repeat
+							<br> - background-position
+ 							<br> <br> * another example
+							<br> font-style: italic;
+							<br> font-weight: bold;
+							<br> font-size: .10em;
+							<br> line-height: 1.4;
+							<br> font-family; Arial, helvetica;
+							<br> <em> this can be shortened to: font: talic bold .10em/1.4 Arial, helvetica; </em>
+							<br>	
+							<br> ** CSS has a universal shorthand property "all"
+							<br> -this applies its value to every property in the document
+							<br>
+							<ol> 
+								<li> inherit - Sets the property value applied to a selected element to be the same as that of its parent element. </li>
+								<li> initial - Sets the property value applied to a selected element to be the same as the value set for that element in the browser's default style sheet. If no value is set by the browser's default style sheet and the property is naturally inherited, then the property value is set to inherit instead. </li>
+								<li> revert - Reverts the property to the value it would have had if the current origin had not applied any styles to it. In other words, the property's value is set to the user stylesheet's value for the property (if one is set), otherwise the property's value is taken from the user-agent's default stylesheet. </li>
+								<li> unset - Resets the property to its natural value, which means that if the property is naturally inherited it acts like inherit, otherwise it acts like initial. </li>
+							</ol>
+							<br>
+							
+							<br> example:
+							<br>
+							<br> body {
+							<br>   color: green;
+							<br> }
+							<br>
+							<br> .inherit a {  
+							<br> color: inherit;
+							<br> }
+							<br>
+							<br> .initial a { 
+							<br> color: initial;
+							<br> }
+							<br>
+							<br> .unset a {
+							<br>   color: unset;
+							<br> }
+						</li> 
+
+					<li>  Atomic Properties / Individual Properties
+						<br> *Vendor Specific Extensions
+ 						<br> - vendor prefixes 
+						<br> - vendor specific extensions are usd by browser as a prefix for the names of experimental (non-standard) css properties (e.g -webkit-)
+					</li> 		
+			    </ul>
+			    
+			    </ul> 
+		</div>
+		<div class="topics">
+		    <h2> CSS PREPROCESSORS </h2>
+		    <ul> 
+			    <li> ... </li>
+		    </ul>
+		    <br>
+		</div>   
+		<div class = "topics">
+		    <h2> CSS FRAMEWORKS </h2>
+		    <ul>
+			    <li> - provides pre-defined css design funvtionality that can be reused, extended or customized (e.g. bootstrap etc.). </li>
+		    </ul>
+		   
+		    <br>
+		</div>
+		<div class = "topics">
+		    <h2> CSS POLYFILLS </h2>
+		    <ul>
+			    <li> - provides features that deveopers expect browsers to provide natively (e.g. modernizr etc.) </li>
+		    </ul>
+		    <br>
             </div>
         </div>
         
@@ -43,8 +143,8 @@
 				<ul>
 					<li>Server-side Programming</li>
 					<li>Client-side Programming
-						<br>-running on the user-agent</li>
-				</ul>
+						<br>- running on the user-agent
+						</ul>
             </div>
             
             <div class="topics">
@@ -55,11 +155,22 @@
 					<li>A language used for web programming.</li>
 					<li>Serves as a client side script/program which is stored in the server and linked with a webpage.</li>
 					<li>Invented at Netscape.</li>
+
 					<li> Alternatives to JavaScript : <a href="https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/"> flash </a>, 
 					<a href="https://docs.oracle.com/javase/7/docs/api/java/applet/Applet.html"> applets </a> , and 
 					<a href= "https://msdn.microsoft.com/en-us/library/office/ms440037(v=office.14).aspx"> activeX </a> </li>
 					<li>Alternative languages: clash & vbscript</li>
-				</ul>
+		</ul>
+		<br>
+		<br>
+		    <b> HOW? </b>
+		    &lt; script type='text/javascipt' src='path/to/script.js' %gt;  &lt; /script &gt;
+		    <ul>
+			    <li> The script may be placed anywhere
+			    <li> It may implemented in two types: top-level (outside of a function, executed as the scrip is loaded) and inline (located inside a function, and is only executed when it is called).</li>	
+			    <li> The functionality of scripts are used upon interaction.</li>
+			    <li> Normally, before the rendering of a page continues, scripts are fetched, compiled and executed.</li>
+			    <li> Mobile users tend to be more impatient due to slow connectivity issues. When the first page of a website slowly loads, they tend to go to another site. Because scripts also contributes to the weight of the site, one must consider the placement and size of the script for it is one factor that affects user satisfaction. </li>
             </div>
             
             <div class="topics">
@@ -90,6 +201,14 @@
 						<br>- usual prefix is 'on' (e.g. onclick).
 					</li>	
 					<br>
+					<li>Inline
+						<br>- invoke a method.
+						<br>- values are placed inside html elements.
+						<br>- These are usually event attributes and are triggered when users interact with the document.
+						<br>- usual prefix is 'on' (e.g. onclick).
+						
+					</li>
+
 					<li>&lt; noscript &gt;
 						<br>- provides alternate content and is used when a browser does not support scripting or is disabled.</li>
 				</ul>
@@ -98,12 +217,14 @@
             <div class="topics">
                 <br>
                 <h2>JAVASCRIPT EXECUTION ENVIRONMENT</h2>
+		    <br> An avenue wherein all codes are combined and associated within a single page.
 				<ol>
 					<br>- An avenue wherein all codes are combined and associated within a single page.<br>&emsp;
 					<li>Core JavaScript(<a href = "https://www.ecma-international.org/ecma-262/8.0/index.html"> EcmaScript </a>) Language and API</li><br>
 					<li>Browser Object Model API (non-standardized)
 						<br>- using the console of the browser.
 						<br>- Window (global), Navigator(the browser itself), Screen(current screen), Location(URL), History</li><br>
+
 					<li>Document Object Model API
 						<ul>
 							<li>Most important API for client-side scripting.</li>
@@ -121,6 +242,7 @@
 								<br>- Manipulate the DOM tree.</li>
 						</ul></li>
 					<li>Miscellaneous
+
 						<br>-<a href = "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation"> Geolocation </a> , 
 						<a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API"> IndexedDB </a> , 
 						<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Local Storage </a> , 
@@ -129,96 +251,116 @@
 						<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"> Web Sockets </a> , 
 						<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers"> Web Workers </a> , 
 						<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest"> XMLHttpRequest(AJAX) </a></li>
+
 				</ol>
             </div>
 			
-			<div class="topics">
-				<br>
-				<h2>JAVASCRIPT LANGUAGE FUNDAMENTALS</h2>
-				<ol>
-					<li>Variables and Constants
-						<br>- Does not need to declare the data type.
-						<br>- Javascript is loosely and dynamically typed, meaning reassigning variable values can change their datatype.
-						<br>
-						<br><i> var globalVar; &emsp; //global scope; becomes a new property
-						<br> let someVar; &emsp; //global scope; does not become a new property
-						<br> const COURSE= 'webtech' &emsp; //global scope; does not become a new property
-						<br> avoidThis = 100; &emsp; //global reference to Window property
-						<br>
-						<br> &emsp; function func() {						
-						<br> &emsp; &emsp; var localVar1; &emsp; //local function scope
-						<br>
-						<br> &emsp; &emsp; for(;;){
-						<br> &emsp; &emsp; &emsp; var localVar2; &emsp; //local function scope but only from this point onwards
-						<br> &emsp; &emsp; &emsp; let blockVar; &emsp; //block local scope 
-						<br> &emsp; &emsp; }
-						<br> &emsp; } </i> 
-						<br>
-						<ul>
-							<li>Primitive Types
-								<ul>
-									<li>Numbers
-										<br>- Special Numbers:
-										<br>&emsp;- 1/0 = infinity
-										<br>&emsp;- -1/0 = -infinity
-										<br>&emsp;- 0/0 = NaN</li>
-									<li>Strings
-										<br>- can be enclosed in a single quote or double quote.
-										<br>- can also use template literals.</li>
-									<li>Booleans
-										<br>- 0, "", false, null, undefined & NaN are considered false.</li>
-									<li>Null</li>
-									<li>Undefined</li>
-									<li>Symbols</li>
-								</ul></li>
-						<li>Object Types (Wrapper Types)
-							<br>- string, number, boolean and date & time(zero based)</li>
-						<li>Regular Expressions (RegExp Object)</li>
-						<li>Mathematical Functions & Objects (Math Objects)</li>
-						<li>Equality and Identity (Strict Equality)
-							<br>&emsp; 1 = = '1' &emsp; true 
-							<br>&emsp; 1 = = = '1' &emsp; false
-							<br>&emsp; 1 ! = true &emsp; false
-							<br>&emsp; 1 ! = = true &emsp; true</li>
-						<li>Implicit Type Conversions
-							<br>- if one variable is a string, the result would automatically be concatenation.
-							<br>- null is equivalent to 0 & undefined is equivalent to NaN in arithmetic operations.
-							<br>NOTE: use object functions for explicit type conversions
-							<br> &emsp; ex. console.log(8 + Number('9')); &emsp; //results to 17
-						</li></ul>
-					<li>Functions
-						<br>- First class objects.
-						<br>- If no return is done, the return value would be undefined.
-						<br>- 'arguments' object is like an array object that corresponds to the arguments being passed to a function and can only be used inside of that function.
-						<br>- Provides the capability to pass functions as arguments on other functions.
-						<br>- Nesting functions are also available with the intention of decluttering. 
-						<br><i>&emsp;&emsp;function x (){
-						<br>&emsp;&emsp;&emsp;function y (){}
-						<br>&emsp;&emsp;&emsp;//function y is accessible at this point
-						<br>&emsp;&emsp;}
-						<br>&emsp;&emsp;//function y is already inaccessible at this point</i></li>
+	<div class="topics">
+			<br>
+			<h2>JAVASCRIPT LANGUAGE FUNDAMENTALS</h2>
+			<ol>
+				<li>Variables and Constants
+
+					<br>- JavaScript is an untypd language, meaning that it does not need to declare the data type.
+					<br>- It is loosely and dynamically typed, meaning reassigning variable values can change their datatype.
+					<br> var globalVar; &emsp;	//global scope; becomes a new property
+
+					<br> let someVar; &emsp; //global scope; does not become a new property
+					<br> const COURSE= 'webtech' &emsp; //global scope; does not become a new property
+					<br> avoidThis = 100; &emsp; //global reference to Window property
 					<br>
-					<li>Arrays
-						<br>- It has dynamic sizing.
-						<br>- Allows "sparse" arrays: elements in between which are empty.
-						<br>- The length is always one more higher than the actual size.
-						<br>- May contain mized types.
-						<br><i>&emsp; var a1 = newArray(10) &emsp;//reserves 10 spaces which are empty
-						<br>&emsp; var a2 = [10] &emsp;//specifying an array containing the value 10</i>
-						<br>- Some methods available: .push() .pop() .unshift() .shift() .sort() .reverse() .map() .reduce() .filter()</li>
+					<br> &emsp; function func() {						
+					<br> &emsp; &emsp; var localVar1; &emsp; //local function scope
 					<br>
-					<li>User-defined Objects
-					<br>- Ability to create objects on the fly.
-					<br>- Makes use of the prototype approach.
-					<br>- Uses the associative array syntax [''] & dot syntax for accessing and creating properties.
-					<br>- Accessing non-existent properties would return a value of undefined.
-					<br>- It is a convention to use Pascal case for the object constructor function.
-					<br>- JSON, a popular data interchange format, allows object conversions to and from JSON-formatted strings (.stringify() & .parse())</li>
-				</ol>
-			</div>
-			
-			<div class="topics">
+					<br> &emsp; &emsp; for(;;){
+					<br> &emsp; &emsp; &emsp; var localVar2; &emsp; //local function scope but only from this point onwards
+					<br> &emsp; &emsp; &emsp; let blockVar; &emsp; //block local scope 
+					<br> &emsp; &emsp; }
+					<br> &emsp; } </i> 
+					<br>
+					<ul>
+						<li>Primitive Types
+							<ul>
+								<li>Numbers
+									<br>- Special Numbers:
+									<br>&emsp;- 1/0 = infinity
+									<br>&emsp;- -1/0 = -infinity
+									<br>&emsp;- 0/0 = NaN</li>
+								<li>Strings
+									<br>- can be enclosed in a single quote or double quote.
+									<br>- can also use template literals.</li>
+								<li>Booleans
+									<br>- 0, "", false, null, undefined & NaN are considered false.</li>
+								<li>Null</li>
+								<li>Undefined</li>
+								<li>Symbols</li>
+							</ul></li>
+					<li>Object Types (Wrapper Types)
+						<br>- string, number, boolean and date & time(zero based)</li>
+					<li>Regular Expressions (RegExp Object)</li>
+					<li>Mathematical Functions & Objects (Math Objects)</li>
+					<li>Equality and Identity (Strict Equality)
+						<br>&emsp; 1 = = '1' &emsp; true 
+						<br>&emsp; 1 = = = '1' &emsp; false
+						<br>&emsp; 1 ! = true &emsp; false
+						<br>&emsp; 1 ! = = true &emsp; true</li>
+					<li>Implicit Type Conversions
+						<br>- if one variable is a string, the result would automatically be concatenation.
+						<br>- null is equivalent to 0 & undefined is equivalent to NaN in arithmetic operations.
+						<br>NOTE: use object functions for explicit type conversions
+						<br> &emsp; ex. console.log(8 + Number('9')); &emsp; //results to 17
+					</li></ul>
+				<li>Functions
+					<br>- First class objects.
+					<br>- If no return is done, the return value would be undefined.
+					<br>- 'arguments' object is like an array object that corresponds to the arguments being passed to a function and can only be used inside of that function.
+					<br>- Provides the capability to pass functions as arguments on other functions.
+					<br>- Nesting functions are also available with the intention of decluttering. 
+					<br><i>&emsp;&emsp;function x (){
+					<br>&emsp;&emsp;&emsp;function y (){}
+					<br>&emsp;&emsp;&emsp;//function y is accessible at this point
+					<br>&emsp;&emsp;}
+					<br>&emsp;&emsp;//function y is already inaccessible at this point</i></li>
 				<br>
+				<li>Arrays
+					<br>- It has dynamic sizing.
+					<br>- Allows "sparse" arrays: elements in between which are empty.
+					<br>- The length is always one more higher than the actual size.
+					<br>- May contain mized types.
+					<br><i>&emsp; var a1 = newArray(10) &emsp;//reserves 10 spaces which are empty
+					<br>&emsp; var a2 = [10] &emsp;//specifying an array containing the value 10</i>
+					<br>- Some methods available: .push() .pop() .unshift() .shift() .sort() .reverse() .map() .reduce() .filter()</li>
+				<br>
+				<li>User-defined Objects
+				<br>- Makes use of the prototype approach.
+				<br> - JavaScript allows the creation of objects on-the-fly.
+					<br> Start from instantiation :
+					<br> person.name='Juan';
+					<br> <em> using the associate-array syntax: </em> person['age'] = 21;
+				<br>- Uses the associative array syntax [''] & dot syntax for accessing and creating properties.
+				<br> <b> METHOD DEFINITION </b>
+					<br> person.sayhi = function () {
+					<br>	consolse.log('Hi, I'm ${this.name}');
+					<br>}
+					<br>
+				<br> <b> FEATURE DETECTION </b>
+					<br> <em> local storage usage: </em> if (window.localStorage){}
+					<br> <em> for property enumeration: </em>
+					<br> 		for (let property in person ) {
+					<br>			console.log('person[property]');
+					<br>		}
+
+				<br>- Accessing non-existent properties would return a value of undefined.
+				<br>- It is a convention to use Pascal case for the object constructor function.
+				<br>- JSON, a popular data interchange format, allows object conversions to and from JSON-formatted strings (.stringify() & .parse())</li>
+			</ol>
+		</div>
+		<br>
+		<div class ="topics">
+			<h2> COMPLEX DATA STRUCTURES </h2>
+		</div>
+
+				<div class = "topics">
 				<h2>EVENT HANDLING</h2>
 				<ol>
 					<li>Event Propagation
