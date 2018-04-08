@@ -1,0 +1,60 @@
+CSS RULE PRECEDENCE
+- an HTML element maybe the subject of the selectors of multiple css blocks(?).
+- only one style with the same property would be applied.
+
+	Resolution:
+	1] By Origin & Importance
+		- author, user, user-agent
+		- normal, important
+		- The purpose of CSS working group is to strike a balance
+	2] By Specificity
+	3] By Order
+		- The last one specified would be applied.
+
+CSS DECLARATION
+* Properties
+	1] Shorthand Properties
+		- Allows authors to specify the values of several properties with the use of a single property.
+	2] Vendor Specific Extensions (vendor prefixes)
+		- Used by browser vendors as a prefix for the names of experimental/non-standard CSS properties.
+		- Lately vendors are moving away from this in favor of user-controlled flags and preferences.
+	3] Custom Properties (experimental CSS variables)
+		- property names with prefix '--'
+		- representing a value that can be reused throughout the document using the var() function
+
+* Values
+	1] Value Processing
+		declared - collect all that were applied
+		cascaded - cascading
+		specified - defaulting
+		computed - resolving value dependencies
+		used - formatting the document
+		actual - when constraints are present
+	2] Value Types
+		* Keywords
+		* Numbers
+		* Dimensions
+		* Length Units
+		* Angle Units
+		* Duration
+		* Frequency
+		* Resolution
+		* Percentages
+		* URLs & URIs
+		* Color
+		* Strings
+		* Functions
+
+CSS Preprocessors, Frameworks & Polyfills
+* Preprocessors
+	- A framework/library that can be used to write css using a custom language which includes features not included in pure CSS.
+	- Needs to be compiled into pure CSS.
+	- ex. SASS, LESS & Stylus
+
+* Frameworks
+	- Provides predefined CSS design functionality that can be reused, extended or customized.
+	- ex. Bootstrap, Foundation & Materialize
+
+* Polyfills
+	- provides features that developers expect browsers to provide natively
+	- ex. Modernizr, Selectivizr
