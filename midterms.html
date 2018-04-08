@@ -30,19 +30,16 @@
 				<li> Labelled as a declarative programming language, Cascading Style Sheets (CSS) are used in formatiing the layout of a webpage wherein rules for HTML documents are described one by one as browsers handle their rendering. </li>				 
         		</ul>
 		<br>
-		    
+		 </div>
+		<div class="topics">
 		    <h2> CSS HISROTY </h2>
 		    <ul>
 			   <li>written by Marc Andreesen in 1994 </li>
 		    </ul>
 		    
 		    <br>
-		   
-		    <h2> CSS DECLARATIONS </h2
-			    <ul>
-			    <li> mag a-aadd pa daw siya dio </li>
-			    </ul> 
-		 <br>
+		</div>
+		<div class="topics">
 		   
 		    <h2> CSS DECLARATIONS </h2
 			    <ul>
@@ -110,20 +107,23 @@
 			    </ul>
 			    
 			    </ul> 
+		</div>
+		<div class="topics">
 		    <h2> CSS PREPROCESSORS </h2>
 		    <ul> 
 			    <li> ... </li>
 		    </ul>
-		    
 		    <br>
-		    
+		</div>   
+		<div class = "topics">
 		    <h2> CSS FRAMEWORKS </h2>
 		    <ul>
 			    <li> - provides pre-defined css design funvtionality that can be reused, extended or customized (e.g. bootstrap etc.). </li>
 		    </ul>
 		   
 		    <br>
-		    
+		</div>
+		<div class = "topics">
 		    <h2> CSS POLYFILLS </h2>
 		    <ul>
 			    <li> - provides features that deveopers expect browsers to provide natively (e.g. modernizr etc.) </li>
@@ -235,103 +235,112 @@
 				</ol>
             </div>
 			
-			<div class="topics">
-				<br>
-				<h2>JAVASCRIPT LANGUAGE FUNDAMENTALS</h2>
-				<ol>
-					<li>Variables and Constants
+	<div class="topics">
+			<br>
+			<h2>JAVASCRIPT LANGUAGE FUNDAMENTALS</h2>
+			<ol>
+				<li>Variables and Constants
 
-						<br>- JavaScript is an untypd language, meaning that it does not need to declare the data type.
-						<br>- It is loosely and dynamically typed, meaning reassigning variable values can change their datatype.
-						<br> var globalVar; &emsp;	//global scope; becomes a new property
+					<br>- JavaScript is an untypd language, meaning that it does not need to declare the data type.
+					<br>- It is loosely and dynamically typed, meaning reassigning variable values can change their datatype.
+					<br> var globalVar; &emsp;	//global scope; becomes a new property
 
-						<br> let someVar; &emsp; //global scope; does not become a new property
-						<br> const COURSE= 'webtech' &emsp; //global scope; does not become a new property
-						<br> avoidThis = 100; &emsp; //global reference to Window property
-						<br>
-						<br> &emsp; function func() {						
-						<br> &emsp; &emsp; var localVar1; &emsp; //local function scope
-						<br>
-						<br> &emsp; &emsp; for(;;){
-						<br> &emsp; &emsp; &emsp; var localVar2; &emsp; //local function scope but only from this point onwards
-						<br> &emsp; &emsp; &emsp; let blockVar; &emsp; //block local scope 
-						<br> &emsp; &emsp; }
-						<br> &emsp; } </i> 
-						<br>
-						<ul>
-							<li>Primitive Types
-								<ul>
-									<li>Numbers
-										<br>- Special Numbers:
-										<br>&emsp;- 1/0 = infinity
-										<br>&emsp;- -1/0 = -infinity
-										<br>&emsp;- 0/0 = NaN</li>
-									<li>Strings
-										<br>- can be enclosed in a single quote or double quote.
-										<br>- can also use template literals.</li>
-									<li>Booleans
-										<br>- 0, "", false, null, undefined & NaN are considered false.</li>
-									<li>Null</li>
-									<li>Undefined</li>
-									<li>Symbols</li>
-								</ul></li>
-						<li>Object Types (Wrapper Types)
-							<br>- string, number, boolean and date & time(zero based)</li>
-						<li>Regular Expressions (RegExp Object)</li>
-						<li>Mathematical Functions & Objects (Math Objects)</li>
-						<li>Equality and Identity (Strict Equality)
-							<br>&emsp; 1 = = '1' &emsp; true 
-							<br>&emsp; 1 = = = '1' &emsp; false
-							<br>&emsp; 1 ! = true &emsp; false
-							<br>&emsp; 1 ! = = true &emsp; true</li>
-						<li>Implicit Type Conversions
-							<br>- if one variable is a string, the result would automatically be concatenation.
-							<br>- null is equivalent to 0 & undefined is equivalent to NaN in arithmetic operations.
-							<br>NOTE: use object functions for explicit type conversions
-							<br> &emsp; ex. console.log(8 + Number('9')); &emsp; //results to 17
-						</li></ul>
-					<li>Functions
-						<br>- First class objects.
-						<br>- If no return is done, the return value would be undefined.
-						<br>- 'arguments' object is like an array object that corresponds to the arguments being passed to a function and can only be used inside of that function.
-						<br>- Provides the capability to pass functions as arguments on other functions.
-						<br>- Nesting functions are also available with the intention of decluttering. 
-						<br><i>&emsp;&emsp;function x (){
-						<br>&emsp;&emsp;&emsp;function y (){}
-						<br>&emsp;&emsp;&emsp;//function y is accessible at this point
-						<br>&emsp;&emsp;}
-						<br>&emsp;&emsp;//function y is already inaccessible at this point</i></li>
+					<br> let someVar; &emsp; //global scope; does not become a new property
+					<br> const COURSE= 'webtech' &emsp; //global scope; does not become a new property
+					<br> avoidThis = 100; &emsp; //global reference to Window property
 					<br>
-					<li>Arrays
-						<br>- It has dynamic sizing.
-						<br>- Allows "sparse" arrays: elements in between which are empty.
-						<br>- The length is always one more higher than the actual size.
-						<br>- May contain mized types.
-						<br><i>&emsp; var a1 = newArray(10) &emsp;//reserves 10 spaces which are empty
-						<br>&emsp; var a2 = [10] &emsp;//specifying an array containing the value 10</i>
-						<br>- Some methods available: .push() .pop() .unshift() .shift() .sort() .reverse() .map() .reduce() .filter()</li>
+					<br> &emsp; function func() {						
+					<br> &emsp; &emsp; var localVar1; &emsp; //local function scope
 					<br>
-					<li>User-defined Objects
-					<br>- Ability to create objects on the fly.
-					<br>- Makes use of the prototype approach.
-					<br>- Uses the associative array syntax [''] & dot syntax for accessing and creating properties.
-					<br>- Accessing non-existent properties would return a value of undefined.
-					<br>- It is a convention to use Pascal case for the object constructor function.
-					<br>- JSON, a popular data interchange format, allows object conversions to and from JSON-formatted strings (.stringify() & .parse())</li>
-				</ol>
-			</div>
-			
-			<div class="topics">
+					<br> &emsp; &emsp; for(;;){
+					<br> &emsp; &emsp; &emsp; var localVar2; &emsp; //local function scope but only from this point onwards
+					<br> &emsp; &emsp; &emsp; let blockVar; &emsp; //block local scope 
+					<br> &emsp; &emsp; }
+					<br> &emsp; } </i> 
+					<br>
+					<ul>
+						<li>Primitive Types
+							<ul>
+								<li>Numbers
+									<br>- Special Numbers:
+									<br>&emsp;- 1/0 = infinity
+									<br>&emsp;- -1/0 = -infinity
+									<br>&emsp;- 0/0 = NaN</li>
+								<li>Strings
+									<br>- can be enclosed in a single quote or double quote.
+									<br>- can also use template literals.</li>
+								<li>Booleans
+									<br>- 0, "", false, null, undefined & NaN are considered false.</li>
+								<li>Null</li>
+								<li>Undefined</li>
+								<li>Symbols</li>
+							</ul></li>
+					<li>Object Types (Wrapper Types)
+						<br>- string, number, boolean and date & time(zero based)</li>
+					<li>Regular Expressions (RegExp Object)</li>
+					<li>Mathematical Functions & Objects (Math Objects)</li>
+					<li>Equality and Identity (Strict Equality)
+						<br>&emsp; 1 = = '1' &emsp; true 
+						<br>&emsp; 1 = = = '1' &emsp; false
+						<br>&emsp; 1 ! = true &emsp; false
+						<br>&emsp; 1 ! = = true &emsp; true</li>
+					<li>Implicit Type Conversions
+						<br>- if one variable is a string, the result would automatically be concatenation.
+						<br>- null is equivalent to 0 & undefined is equivalent to NaN in arithmetic operations.
+						<br>NOTE: use object functions for explicit type conversions
+						<br> &emsp; ex. console.log(8 + Number('9')); &emsp; //results to 17
+					</li></ul>
+				<li>Functions
+					<br>- First class objects.
+					<br>- If no return is done, the return value would be undefined.
+					<br>- 'arguments' object is like an array object that corresponds to the arguments being passed to a function and can only be used inside of that function.
+					<br>- Provides the capability to pass functions as arguments on other functions.
+					<br>- Nesting functions are also available with the intention of decluttering. 
+					<br><i>&emsp;&emsp;function x (){
+					<br>&emsp;&emsp;&emsp;function y (){}
+					<br>&emsp;&emsp;&emsp;//function y is accessible at this point
+					<br>&emsp;&emsp;}
+					<br>&emsp;&emsp;//function y is already inaccessible at this point</i></li>
 				<br>
-				<h2>USER-DEFINED OBJECTS </h2>
-				<ul> 
-					<li> JavaScript allows the creation of objects on-the-fly.</li>
-					<li> Start from instantiation :
-						<br>person.name='Juan';
-						<br> <em> using the associate-array syntax: </em> person['age'] = 21;
-					</li>
-					<li> <b> METHOD DEFINITION </b>
-				
+				<li>Arrays
+					<br>- It has dynamic sizing.
+					<br>- Allows "sparse" arrays: elements in between which are empty.
+					<br>- The length is always one more higher than the actual size.
+					<br>- May contain mized types.
+					<br><i>&emsp; var a1 = newArray(10) &emsp;//reserves 10 spaces which are empty
+					<br>&emsp; var a2 = [10] &emsp;//specifying an array containing the value 10</i>
+					<br>- Some methods available: .push() .pop() .unshift() .shift() .sort() .reverse() .map() .reduce() .filter()</li>
+				<br>
+				<li>User-defined Objects
+				<br>- Makes use of the prototype approach.
+				<br> - JavaScript allows the creation of objects on-the-fly.
+					<br> Start from instantiation :
+					<br> person.name='Juan';
+					<br> <em> using the associate-array syntax: </em> person['age'] = 21;
+				<br>- Uses the associative array syntax [''] & dot syntax for accessing and creating properties.
+				<br> <b> METHOD DEFINITION </b>
+					<br> person.sayhi = function () {
+					<br>	consolse.log('Hi, I'm ${this.name}');
+					<br>}
+					<br>
+				<br> <b> FEATURE DETECTION </b>
+					<br> <em> local storage usage: </em> if (window.localStorage){}
+					<br> <em> for property enumeration: </em>
+					<br> 		for (let property in person ) {
+					<br>			console.log('person[property]');
+					<br>		}
+
+				<br>- Accessing non-existent properties would return a value of undefined.
+				<br>- It is a convention to use Pascal case for the object constructor function.
+				<br>- JSON, a popular data interchange format, allows object conversions to and from JSON-formatted strings (.stringify() & .parse())</li>
+			</ol>
+		</div>
+		<br>
+		<div class ="topics">
+			<h2> COMPLEX DATA STRUCTURES </h2>
+		</div>
+
+				<div class = "topics">
 				<h2>EVENT HANDLING</h2>
 				<ol>
 					<li>Event Propagation
