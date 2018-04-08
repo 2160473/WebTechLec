@@ -187,6 +187,7 @@
 							<br>	Note: some browsers don't have support for these attributes. As an alternative solution to hte problem, scripts may be placed at the end of the page.
 							
 					</li>
+
 					<br>
 					<li>Embedded/Internal 
 						<br>- script that is placed anywhere in the HTML document, particularry in between &lt; script &gt; &lt; /script &gt; ./li>
@@ -198,6 +199,7 @@
 						<br>- usual prefix is 'on' (e.g. onclick).
 						
 					</li>
+
 					<li>&lt; noscript &gt;
 						<br>- provides alternate content and is used when a browser does not support scripting or is disabled.</li>
 				</ul>
@@ -219,7 +221,7 @@
 							<li>It is managed by <a href="https://www.w3.org/DOM/DOMTR"> W3C. </a> </li>
 							<li>Nodes
 								<br>- primary data type of DOM.
-								<br>- represents HTML document components<
+								<br>- represents HTML document components
 								<br> ex. document node, document type node, element node & text node
 								<br> note: white spaces are considered as text nodes.</li>
 							<li>Functionalities
@@ -238,34 +240,84 @@
 				<h2>JAVASCRIPT LANGUAGE FUNDAMENTALS</h2>
 				<ol>
 					<li>Variables and Constants
+
 						<br>- JavaScript is an untypd language, meaning that it does not need to declare the data type.
 						<br>- It is loosely and dynamically typed, meaning reassigning variable values can change their datatype.
 						<br> var globalVar; &emsp;	//global scope; becomes a new property
+
 						<br> let someVar; &emsp; //global scope; does not become a new property
 						<br> const COURSE= 'webtech' &emsp; //global scope; does not become a new property
 						<br> avoidThis = 100; &emsp; //global reference to Window property
 						<br>
-						<br><b>PRIMITIVE TYPES</b>
-							<ul>
-								<li>Numbers
-									<br>- Special Numbers:
-									<br>&emsp;- 1/0 = infinity
-									<br>&emsp;- -1/0 = -infinity
-									<br>&emsp;- 0/0 = NaN</li>
-								<li>Strings
-									<br>- can be enclosed in a single quote or double quote.
-									<br>- can also use template literals.</li>
-								<li>Booleans
-									<br>- 0, "", false, null, undefined & NaN are considered false.</li>
-								<li>Null</li>
-								<li>Undefined</li>
-								<li>Symbols</li>
-							</ul></li>
+						<br> &emsp; function func() {						
+						<br> &emsp; &emsp; var localVar1; &emsp; //local function scope
+						<br>
+						<br> &emsp; &emsp; for(;;){
+						<br> &emsp; &emsp; &emsp; var localVar2; &emsp; //local function scope but only from this point onwards
+						<br> &emsp; &emsp; &emsp; let blockVar; &emsp; //block local scope 
+						<br> &emsp; &emsp; }
+						<br> &emsp; } </i> 
+						<br>
+						<ul>
+							<li>Primitive Types
+								<ul>
+									<li>Numbers
+										<br>- Special Numbers:
+										<br>&emsp;- 1/0 = infinity
+										<br>&emsp;- -1/0 = -infinity
+										<br>&emsp;- 0/0 = NaN</li>
+									<li>Strings
+										<br>- can be enclosed in a single quote or double quote.
+										<br>- can also use template literals.</li>
+									<li>Booleans
+										<br>- 0, "", false, null, undefined & NaN are considered false.</li>
+									<li>Null</li>
+									<li>Undefined</li>
+									<li>Symbols</li>
+								</ul></li>
+						<li>Object Types (Wrapper Types)
+							<br>- string, number, boolean and date & time(zero based)</li>
+						<li>Regular Expressions (RegExp Object)</li>
+						<li>Mathematical Functions & Objects (Math Objects)</li>
+						<li>Equality and Identity (Strict Equality)
+							<br>&emsp; 1 = = '1' &emsp; true 
+							<br>&emsp; 1 = = = '1' &emsp; false
+							<br>&emsp; 1 ! = true &emsp; false
+							<br>&emsp; 1 ! = = true &emsp; true</li>
+						<li>Implicit Type Conversions
+							<br>- if one variable is a string, the result would automatically be concatenation.
+							<br>- null is equivalent to 0 & undefined is equivalent to NaN in arithmetic operations.
+							<br>NOTE: use object functions for explicit type conversions
+							<br> &emsp; ex. console.log(8 + Number('9')); &emsp; //results to 17
+						</li></ul>
 					<li>Functions
-						<br>- first class objects 
-						<br>- if no return is done, the return value would be undefined.</li>
-					<li>Arrays</li>
-					<li>User-defined Objects</li>
+						<br>- First class objects.
+						<br>- If no return is done, the return value would be undefined.
+						<br>- 'arguments' object is like an array object that corresponds to the arguments being passed to a function and can only be used inside of that function.
+						<br>- Provides the capability to pass functions as arguments on other functions.
+						<br>- Nesting functions are also available with the intention of decluttering. 
+						<br><i>&emsp;&emsp;function x (){
+						<br>&emsp;&emsp;&emsp;function y (){}
+						<br>&emsp;&emsp;&emsp;//function y is accessible at this point
+						<br>&emsp;&emsp;}
+						<br>&emsp;&emsp;//function y is already inaccessible at this point</i></li>
+					<br>
+					<li>Arrays
+						<br>- It has dynamic sizing.
+						<br>- Allows "sparse" arrays: elements in between which are empty.
+						<br>- The length is always one more higher than the actual size.
+						<br>- May contain mized types.
+						<br><i>&emsp; var a1 = newArray(10) &emsp;//reserves 10 spaces which are empty
+						<br>&emsp; var a2 = [10] &emsp;//specifying an array containing the value 10</i>
+						<br>- Some methods available: .push() .pop() .unshift() .shift() .sort() .reverse() .map() .reduce() .filter()</li>
+					<br>
+					<li>User-defined Objects
+					<br>- Ability to create objects on the fly.
+					<br>- Makes use of the prototype approach.
+					<br>- Uses the associative array syntax [''] & dot syntax for accessing and creating properties.
+					<br>- Accessing non-existent properties would return a value of undefined.
+					<br>- It is a convention to use Pascal case for the object constructor function.
+					<br>- JSON, a popular data interchange format, allows object conversions to and from JSON-formatted strings (.stringify() & .parse())</li>
 				</ol>
 			</div>
 			
@@ -282,11 +334,72 @@
 				
 				<h2>EVENT HANDLING</h2>
 				<ol>
-					<li>Event Propagation</li>
-					<li>Event Handler Registration</li>
-					<li>Event Object Properties & Methods</li>
-					<li>Creating & Dispatching Events</li>
+					<li>Event Propagation
+						<ul>
+							<li>Bubbling Phase
+							<br>- used to trigger from inner to outer.
+							<br>- used by IE.</li>
+							<li>Capturing Phase
+							<br>- used to trigger from outer to inner.</li>
+							<li>DOM Order
+							<br>Capture -> At Target -> Bubble</li>
+						</ul></li>
+					<li>Event Handler Registration
+						<ul>
+							<li>Inline HTML event attribute
+								<br>- This is not recommended but fully supported.
+								<br><i>onclick = 'handler()'</i></li>
+							<li>pre-DOM L2
+								<br>- This is preferred and universally supported but non-standard.
+								<br>- Can only register one handler
+								<br>- To remove a handler, assign any invalid value.
+								<br><i>button.onclick = handler;</i></li>
+							<li>DOM L2 event registration
+								<br>- Can register more than one event handler.
+								<br><i> .addEventListener(nameOfEvent, handler, boolean);</i>
+								<br> *for the 3rd argument: false = bubbling phase & true = capturing phase
+								<br>- Other methods: removeEventHandler() & dispatchEvent()</li>
+							<li>Microsoft-specific
+								<br>- Available for IEv6 to IEv10.
+								<br>- Intention: vendor lock.
+								<br>- Methods: .attachEvent() .detachEvent() & .fireEvent()</li>
+						</ul></li>
+					<li>Event Object Properties & Methods
+						<ul>
+						<li>bubbles: boolean</li>
+						<li>eventPhase: typeofphase</li>
+						<li>target: trigger &emsp; srcElement(Microsoft)</li>
+						<li>currentTarget: handler</li>
+						<li>preventDefault: prevent default behavior</li>
+						<li>stopPropagation:</li>
+						<li>stopImmediatePropagation:</li>
+						</ul></li>
+					<li>Creating & Dispatching Events<br></li>
+					<br>NOTE:
+					<br>&emsp;- cross-browser event registration.
+					<br>&emsp;- Window.event gives information about the event.
 				</ol>
+			</div>
+			
+			<div class="topics">
+				<br>
+				<h2>AJAX(Asynchronous JavaScript and XML)</h2>
+				
+				<ul>
+					<li>XMLHttpRequest
+					<br>- Dynamically fetch from a server.
+					<ol>
+						<li>Create
+						<br><i>var xhr = new XMLHttpRequest();</i></li>
+						<li>Specify what would be fetched
+						<br><i>xhr.open('GET', resource, false)</i></li>
+						<li>Get
+						<br><i>xhr.send();</i></li>
+					</ol></li>
+					<li>ECMA Script 2015
+					<br>- Introduction to javascript Promise
+					<br><i> var promise = new Promise(function(resolve,reject){});</i></li>
+				</ul>
 			</div>
         </div>        
         <footer>&copy; Web Systems and Technologies 2018| Group 6</footer>
