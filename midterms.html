@@ -69,66 +69,64 @@
 		<button class="headline"> CSS DECLARATIONS </button>
 		<div class="info">
 			    <ul>
-			    	<li> A CSS rule-set is divided into two; a selector and a declaration block 
+			    	<li> A CSS rule-set is divided into two; a selector and a declaration block
 					<br> 
 					<br> h1 (selector) {color:yellow; font-size:14px;} (declaration)
                				<br> property -- value -- property --value
 					<br>
 					<br> Selector - points to the HTML element you want to style
 					<br> Declaration Block - contains one or more declarations separated by semi-colons
-					<br><em> ** CSS Declarations always end with a semi-colon </em>
-					<br> 
-						<br>
-					**Syntax - composed of sequence of simple selectors and are separated by combinators.
+					<br><em> ** CSS Declarations always end with a semi-colon </em></li>
+					<br>
+					<li>Syntax - composed of sequence of simple selectors and are separated by combinators.
 					<br>
 					<br>
 					<em>Sequence of simple selector</em>
 						<ol>
-							<li> * - type selector/universal
-							<li> No combinators
-							<li> + - adjacent selector
+							<li> * - type selector/universal</li>
+							<li> No combinators</li>
+							<li> + - adjacent selector</li>
 						</ol>
 					COMBINATORS
 					<br>
 					<em>*Selector group - comma-separated representing the union of elements</em>
 					<br>
+					</li>
 					<br>
-					Representation:
-					<br>
+					<li>Representation:
 						<ol>
-							<li> Descendant - white-space
-							<li> Child - >
-							<li> Sibling 
-								<ul>
-									<li> Adjacent (right after) - +
-									<li> General (after) - ~
-								</ul>
+							<li> Descendant - white-space</li>
+							<li> Child - ></li>
+							<li> Sibling
+							<ul>
+									<li> Adjacent (right after) - +</li>
+									<li> General (after) - ~</li>
+							</ul></li>
 						</ol>
-					<br>
-					Simple Selector
+					</li>
+					<li>Simple Selector
 					<ol>
-						<li> Universal selector - selects everything by using asterisk (*).
-						<li> Type Selector - selects type of elements
-						<li> ID selectors - selects by using hash sign (#).
-						<li> Class Selector - selects using a period (.)
-						<li> Attribute selector - Selects elements with specific attributes using the [] brackets.
-					</ol>
-					<br> 
-					</li> 
+						<li> Universal selector - selects everything by using asterisk (*).</li>
+						<li> Type Selector - selects type of elements</li>
+						<li> ID selectors - selects by using hash sign (#).</li>
+						<li> Class Selector - selects using a period (.)</li>
+						<li> Attribute selector - Selects elements with specific attributes using the [] brackets.</li>
+					</ol> 
+					</li>
 						<li> Shorthand Properties
  							<br> - allows authors to specify multiple values
      							<br> - one example of a shorthand property is the CSS background property, that is able to define values of
-							<br> - background-color
-							<br> - background-image
-							<br> - background-repeat
-							<br> - background-position
+							<br> &emsp; - background-color
+							<br> &emsp; - background-image
+							<br> &emsp; - background-repeat
+							<br> &emsp; - background-position
  							<br> <br> * another example
-							<br> font-style: italic;
-							<br> font-weight: bold;
-							<br> font-size: .10em;
-							<br> line-height: 1.4;
-							<br> font-family; Arial, helvetica;
-							<br> <em> this can be shortened to: font: talic bold .10em/1.4 Arial, helvetica; </em>
+							<br> &emsp;<em>font-style: italic;
+							<br> &emsp;font-weight: bold;
+							<br> &emsp;font-size: .10em;
+							<br> &emsp;line-height: 1.4;
+							<br> &emsp;font-family; Arial, helvetica;</em>
+							<br> this can be shortened to: <em>font: talic bold .10em/1.4 Arial, helvetica; </em>
 							<br>	
 							<br> ** CSS has a universal shorthand property "all"
 							<br> -this applies its value to every property in the document
@@ -142,7 +140,7 @@
 							
 							example:
 							<br>
-							<br> body {
+							<br> <em>body {
 							<br>   color: green;
 							<br> }
 							<br>
@@ -156,7 +154,7 @@
 							<br>
 							<br> .unset a {
 							<br>   color: unset;
-							<br> }
+							<br> } </em>
 						</li> 
 					<br>
 					<li>  Atomic Properties / Individual Properties
@@ -195,7 +193,7 @@
 		<button class="headline"> CSS POLYFILLS </button>
 		<div class = "info">
 		    <ul>
-			    <li> - provides features that developers expect browsers to provide natively (e.g. modernizr, selectivizr,  etc.) </li>
+			    <li> Provides features that developers expect browsers to provide natively (e.g. modernizr, selectivizr,  etc.) </li>
 			</ul>
 		    <br>
             </div>
@@ -213,7 +211,7 @@
 					<li>Server-side Programming</li>
 					<li>Client-side Programming
 						<br>- running on the user-agent
-						<br> - creating programs that are intended to run in the bwoser environment
+						<br>- creating programs that are intended to run in the browser environment
 				</ul>
             </div>
             
@@ -230,14 +228,16 @@
 					<a href="https://docs.oracle.com/javase/7/docs/api/java/applet/Applet.html"> applets </a> , and 
 					<a href= "https://msdn.microsoft.com/en-us/library/office/ms440037(v=office.14).aspx"> activeX </a> </li>
 					<li>Alternative languages: clash & vbscript</li>
-		<br>
-		    <b> HOW? </b>
-		    &lt; script type='text/javascipt' src='path/to/script.js' %gt;  &lt; /script &gt;
-                <br>
-			    <li> The script may be placed anywhere
-			    <li> It may implemented in two types: top-level (outside of a function, executed as the script is loaded) and inline (located inside a function, and is only executed when it is called).</li>	
-			    <li> The functionality of scripts are used upon interaction.</li>
-			    <li> Mobile users tend to be more impatient due to slow connectivity issues. When the first page of a website slowly loads, they tend to go to another site. Because scripts also contributes to the weight of the site, one must consider the placement and size of the script for it is one factor that affects user satisfaction. </li>
+					<br>
+					<li><b>HOW?</b>
+			    
+						<br>- The script may be placed anywhere.
+						<br>- It may implemented in two types: top-level (outside of a function, executed as the script is loaded) and inline (located inside a function, and is only executed when it is called).	
+						<br>- The functionality of scripts are used upon interaction.
+					</li>
+					<br>
+					<li><b>NOTE:</b> Mobile users tend to be more impatient due to slow connectivity issues. When the first page of a website slowly loads, they tend to go to another site. Because scripts also contributes to the weight of the site, one must consider the placement and size of the script for it is one factor that affects user satisfaction. 
+					</li>
                 </ul>
             </div>
             
@@ -257,7 +257,7 @@
 							<li>async
 								<br>- means to fetch the script then load the page while waiting for the script to be fetched. Once it has been fetched, continue with parsing the script.</li>
 							</ol>
-						<br>Note: some browsers don't have support for these attributes. As an alternative solution to the problem, scripts may be placed at the end of the page.
+						<b>NOTE:</b> some browsers don't have support for these attributes. As an alternative solution to the problem, scripts may be placed at the end of the page.
 					</li>
 					<br>
 					<li>Embedded/Internal
@@ -332,8 +332,9 @@
 				<li>Variables and Constants
 
 					<br>- JavaScript is an untyped language, meaning that it does not need to declare the data type.
-					<br>- It is loosely and dynamically typed, meaning reassigning variable values can change their datatype.
-					<br> var globalVar; &emsp;	//global scope; becomes a new property
+					<br>- It is loosely and dynamically typed, meaning reassigning variable values can change their data type.
+					<br>
+					<br><i>var globalVar; &emsp;	//global scope; becomes a new property
 
 					<br> let someVar; &emsp; //global scope; does not become a new property
 					<br> const COURSE= 'webtech' &emsp; //global scope; does not become a new property
@@ -346,7 +347,7 @@
 					<br> &emsp; &emsp; &emsp; var localVar2; &emsp; //local function scope but only from this point onwards
 					<br> &emsp; &emsp; &emsp; let blockVar; &emsp; //block local scope 
 					<br> &emsp; &emsp; }
-					<br> &emsp; } 
+					<br> &emsp; } </i>
 					<br>
 					<ul>
 						<li>Primitive Types
@@ -366,18 +367,19 @@
 								<li>Symbols</li>
 							</ul></li>
 					<li>Object Types (Wrapper Types)
-						<br>- string, number, boolean and date & time(zero based)</li>
-					<li>Regular Expressions (RegExp Object)</li>
-					<li>Mathematical Functions & Objects (Math Objects)</li>
+						<br>- string, number, boolean and date & time(zero based)</li><br>
+					<li>Regular Expressions (RegExp Object)</li><br>
+					<li>Mathematical Functions & Objects (Math Objects)</li><br>
 					<li>Equality and Identity (Strict Equality)
 						<br>&emsp; 1 = = '1' &emsp; true 
 						<br>&emsp; 1 = = = '1' &emsp; false
 						<br>&emsp; 1 ! = true &emsp; false
-						<br>&emsp; 1 ! = = true &emsp; true</li>
+						<br>&emsp; 1 ! = = true &emsp; true</li><br>
 					<li>Implicit Type Conversions
 						<br>- if one variable is a string, the result would automatically be concatenation.
 						<br>- null is equivalent to 0 & undefined is equivalent to NaN in arithmetic operations.
-						<br>NOTE: use object functions for explicit type conversions
+						<br>
+						<br><b>NOTE:</b> use object functions for explicit type conversions
 						<br> &emsp; ex. console.log(8 + Number('9')); &emsp; //results to 17
 					</li></ul></li>
 				<li>Functions
@@ -397,32 +399,29 @@
 					<br>- Allows "sparse" arrays: elements in between which are empty.
 					<br>- The length is always one more higher than the actual size.
 					<br>- May contain mixed types.
+					<br>- Some methods available: .push() .pop() .unshift() .shift() .sort() .reverse() .map() .reduce() .filter()
 					<br><i>&emsp; var a1 = newArray(10) &emsp;//reserves 10 spaces which are empty
-					<br>&emsp; var a2 = [10] &emsp;//specifying an array containing the value 10</i>
-					<br>- Some methods available: .push() .pop() .unshift() .shift() .sort() .reverse() .map() .reduce() .filter()</li>
+					<br>&emsp; var a2 = [10] &emsp;//specifying an array containing the value 10</i></li>
 				<br>
 				<li>User-defined Objects
 				<br>- Makes use of the prototype approach.
-				<br> - JavaScript allows the creation of objects on-the-fly.
-					<br> Start from instantiation :
-					<br> person.name='Juan';
-					<br> <em> using the associate-array syntax: </em> person['age'] = 21;
-				<br>- Uses the associative array syntax [''] & dot syntax for accessing and creating properties.
-				<br> <b> METHOD DEFINITION </b>
-					<br> person.sayhi = function () {
-					<br>	console.log('Hi, I'm ${this.name}');
-					<br>}
-					<br>
-				<br> <b> FEATURE DETECTION </b>
-					<br> <em> local storage usage: </em> if (window.localStorage){}
-					<br> <em> for property enumeration: </em>
-					<br> 		for (let property in person ) {
-					<br>			console.log('person[property]');
-					<br>		}
-
+				<br>- JavaScript allows the creation of objects on-the-fly.
+				<br>- Uses the associative array syntax (<em> person['age'] = 21; </em>) & dot syntax (<em>person.name='Juan';</em>) for accessing and creating properties.
 				<br>- Accessing non-existent properties would return a value of undefined.
 				<br>- It is a convention to use Pascal case for the object constructor function.
-				<br>- JSON, a popular data interchange format, allows object conversions to and from JSON-formatted strings (.stringify() & .parse())</li>
+				<br>- JSON, a popular data interchange format, allows object conversions to and from JSON-formatted strings (.stringify() & .parse())
+				<br>
+				<br> <b> METHOD DEFINITION </b>
+					<br> <em> person.sayhi = function () {
+					<br> &emsp; console.log('Hi, I'm ${this.name}');
+					<br> }</em>
+					<br>
+				<br> <b> FEATURE DETECTION </b>
+					<br> local storage usage: <em> if (window.localStorage){} </em>
+					<br> for property enumeration: <em>
+					<br> &emsp; for (let property in person ) {
+					<br> &emsp;&emsp; console.log('person[property]');
+					<br> &emsp; } </em> </li>
 			</ol>
 		</div>
 			
@@ -448,17 +447,17 @@
 						<ul>
 							<li>Inline HTML event attribute
 								<br>- This is not recommended but fully supported.
-								<br><i>onclick = 'handler()'</i></li>
+								<br><i>onclick = 'handler()'</i></li><br>
 							<li>pre-DOM L2
 								<br>- This is preferred and universally supported but non-standard.
 								<br>- Can only register one handler
 								<br>- To remove a handler, assign any invalid value.
-								<br><i>button.onclick = handler;</i></li>
+								<br><i>button.onclick = handler;</i></li><br>
 							<li>DOM L2 event registration
 								<br>- Can register more than one event handler.
 								<br><i> .addEventListener(nameOfEvent, handler, boolean);</i>
 								<br> *for the 3rd argument: false = bubbling phase & true = capturing phase
-								<br>- Other methods: removeEventHandler() & dispatchEvent()</li>
+								<br>- Other methods: removeEventHandler() & dispatchEvent()</li><br>
 							<li>Microsoft-specific
 								<br>- Available for IEv6 to IEv10.
 								<br>- Intention: vendor lock.
@@ -475,7 +474,7 @@
 						<li>stopImmediatePropagation:</li>
 						</ul></li>
 					<li>Creating & Dispatching Events<br></li>
-					<br>NOTE:
+					<br><b>NOTE:</b>
 					<br>&emsp;- cross-browser event registration.
 					<br>&emsp;- Window.event gives information about the event.
 				</ol>
