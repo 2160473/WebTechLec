@@ -36,9 +36,11 @@
 		<button class="headline"> CSS HISTORY </button>
 		<div class="info">
 		    <ul>
+			   <li>was first proposed by Håkon Wium Lie on October 10, 1994  </li>
 			   <li>written by Marc Andreesen in 1994 </li>
+			   <li> Cascading Style Sheets (CSS) was devoloped to provide stylesheets for the web</li>
 		    </ul>
-		    
+		         
 		    <br>
 		</div>
 
@@ -51,11 +53,15 @@
 				<br><b>Resolution:</b>
 			   <li>By Origin & Importance
 			   <br>- Origin: author, user, user-agent
+			   <br>&emsp;- author - provided by the actual author
+			   <br>&emsp;- user - provides facility for the users to indicate their preference
+			   <br>&emsp;- user-agent - provided by the browser
 			   <br>- Importance: normal, important</li>
 			   <li>By Specificity</li>
 			   <li>By Order
 			   <br>- The last one specified would be applied.</li>
-		    </ol>
+		    
+			</ol>
 		    
 		    <br>
 		</div>
@@ -72,7 +78,43 @@
 					<br> Declaration Block - contains one or more declarations separated by semi-colons
 					<br><em> ** CSS Declarations always end with a semi-colon </em>
 					<br> 
-					<br> </li> 
+						<br>
+					**Syntax - composed of sequence of simple selectors and are separated by combinators.
+					<br>
+					<br>
+					<em>Sequence of simple selector</em>
+						<ol>
+							<li> * - type selector/universal
+							<li> No combinators
+							<li> + - adjacent selector
+						</ol>
+					COMBINATORS
+					<br>
+					<em>*Selector group - comma-separated representing the union of elements</em>
+					<br>
+					<br>
+					Representation:
+					<br>
+						<ol>
+							<li> Descendant - white-space
+							<li> Child - >
+							<li> Sibling 
+								<ul>
+									<li> Adjacent (right after) - +
+									<li> General (after) - ~
+								</ul>
+						</ol>
+					<br>
+					Simple Selector
+					<ol>
+						<li> Universal selector - selects everything by using asterisk (*).
+						<li> Type Selector - selects type of elements
+						<li> ID selectors - selects by using hash sign (#).
+						<li> Class Selector - selects using a period (.)
+						<li> Attribute selector - Selects elements with specific attributes using the [] brackets.
+					</ol>
+					<br> 
+					</li> 
 						<li> Shorthand Properties
  							<br> - allows authors to specify multiple values
      							<br> - one example of a shorthand property is the CSS background property, that is able to define values of
@@ -121,7 +163,8 @@
 						<br> *Vendor Specific Extensions
  						<br> - vendor prefixes 
 						<br> - vendor specific extensions are used by browser as a prefix for the names of experimental (non-standard) CSS properties (e.g -webkit-)
-					</li> 		
+						<br> - cross-browser compatible
+				    </li>
 			    </ul>    
 		</div>
 			
@@ -139,8 +182,11 @@
 		<button class="headline"> CSS FRAMEWORKS </button>
 		<div class = "info">
 		    <ul>
-			    <li> Provides predefined CSS design functionality that can be reused, extended or customized (e.g. bootstrap etc.). </li>
-		    </ul>
+			    <li> Provides predefined CSS design functionality that can be reused, extended or customized (e.g. bootstrap, unsemantic, BlueTrip, <SUSY> etc.). </li>
+			    <li> Two widely used frameworks for CSS are Bootstrap and Foundation 
+			    <li> CSS Frameworks relieve cross-browser concerns
+			</ul>
+
 		   
 		    <br>
 		</div>
@@ -149,8 +195,8 @@
 		<button class="headline"> CSS POLYFILLS </button>
 		<div class = "info">
 		    <ul>
-			    <li> Provides features that developers expect browsers to provide natively (e.g. modernizr etc.) </li>
-		    </ul>
+			    <li> - provides features that developers expect browsers to provide natively (e.g. modernizr, selectivizr,  etc.) </li>
+			</ul>
 		    <br>
             </div>
         </div>
@@ -167,6 +213,7 @@
 					<li>Server-side Programming</li>
 					<li>Client-side Programming
 						<br>- running on the user-agent
+						<br> - creating programs that are intended to run in the bwoser environment
 				</ul>
             </div>
             
@@ -188,14 +235,14 @@
 		    &lt; script type='text/javascipt' src='path/to/script.js' %gt;  &lt; /script &gt;
                 <br>
 			    <li> The script may be placed anywhere
-			    <li> It may implemented in two types: top-level (outside of a function, executed as the scrip is loaded) and inline (located inside a function, and is only executed when it is called).</li>	
+			    <li> It may implemented in two types: top-level (outside of a function, executed as the script is loaded) and inline (located inside a function, and is only executed when it is called).</li>	
 			    <li> The functionality of scripts are used upon interaction.</li>
 			    <li> Mobile users tend to be more impatient due to slow connectivity issues. When the first page of a website slowly loads, they tend to go to another site. Because scripts also contributes to the weight of the site, one must consider the placement and size of the script for it is one factor that affects user satisfaction. </li>
                 </ul>
             </div>
             
 			
-            <button class="headline">SCIPT PLACEMENTS</button>
+            <button class="headline">SCRIPT PLACEMENTS</button>
             <div class="info">
                 <br>
 				<ul>
