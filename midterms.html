@@ -60,7 +60,8 @@
 			   <li>By Specificity</li>
 			   <li>By Order
 			   <br>- The last one specified would be applied.</li>
-		    </ol>
+		    
+			</ol>
 		    
 		    <br>
 		</div>
@@ -77,7 +78,43 @@
 					<br> Declaration Block - contains one or more declarations separated by semi-colons
 					<br><em> ** CSS Declarations always end with a semi-colon </em>
 					<br> 
-					<br> </li> 
+						<br>
+					**Syntax - composed of sequence of simple selectors and are separated by combinators.
+					<br>
+					<br>
+					<em>Sequence of simple selector</em>
+						<ol>
+							<li> * - type selector/universal
+							<li> No combinators
+							<li> + - adjacent selector
+						</ol>
+					COMBINATORS
+					<br>
+					<em>*Selector group - comma-separated representing the union of elements</em>
+					<br>
+					<br>
+					Representation:
+					<br>
+						<ol>
+							<li> Descendant - white-space
+							<li> Child - >
+							<li> Sibling 
+								<ul>
+									<li> Adjacent (right after) - +
+									<li> General (after) - ~
+								</ul>
+						</ol>
+					<br>
+					Simple Selector
+					<ol>
+						<li> Universal selector - selects everything by using asterisk (*).
+						<li> Type Selector - selects type of elements
+						<li> ID selectors - selects by using hash sign (#).
+						<li> Class Selector - selects using a period (.)
+						<li> Attribute selector - Selects elements with specific attributes using the [] brackets.
+					</ol>
+					<br> 
+					</li> 
 						<li> Shorthand Properties
  							<br> - allows authors to specify multiple values
      							<br> - one example of a shorthand property is the CSS background property, that is able to define values of
