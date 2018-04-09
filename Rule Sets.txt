@@ -1,0 +1,28 @@
+CSS Selectors 
+	Selector - structure used as a conditipon 
+		 - determine which elements in the document tree are matched by selector
+		 - Elements are called subjects
+		SYNTAX - composed of sequence of simple selectors and are separated by combinators.
+		
+		*Sequence of simple selector
+			1. * - type selector/universal
+			2. No combinators
+			3. + - adjacent selector
+ 	
+	Combinators 
+	 *Selector group - comma-separated representing the union of elements
+		
+	 REPRESENTATION:
+		*Descendant - white-space
+		*Child - >
+		*Sibling
+		   * Adjacent (right after) - +
+		   * General (after) - ~
+
+	Simple Selector
+		*Universal selector - selects everything
+		*Type Selector - selects type of elements
+		*ID selectors - selects by using hash sign (#)
+		*Class Selector - selects using a period (.)
+		*Attribute selector - Selects elements with specific attributes using the [] brackets.
+		 		
