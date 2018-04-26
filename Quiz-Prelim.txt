@@ -1,0 +1,72 @@
+﻿MULTIPLE CHOICE
+B			1. This allows mapping a host name to an IP address
+				a. URL
+				b. DNS
+				c. Hypermedia
+				d. Static resource
+A 			2. What is considered to be today's greatest information system?
+				a. World Wide Web
+				b. Hypertext Transfer Protocol
+				c. Hypertext Markup Language
+				d. Standard Generalized Markup Language
+C			3.  HTTP 1.1 included the following improvements except for one.
+				a. compression of data
+				b. content negotiation
+				c. parallel request handling
+				d. support for chunk responses
+D			4. Which of the following HTTP versions made use of a binary protocol?
+				a. HTTP 0.9
+				b. HTTP 1.0
+				c. HTTP 1.1
+				d. HTTP 2
+C			5.  _______ introduced persistent connection.
+				a. HTTP 0.9
+				b. HTTP 1.0
+				c. HTTP 1.1
+				d. HTTP 2
+C 			6. Which of the following is not a safe HTTP request method?
+				a. GET
+				b. HEAD
+				c. POST
+				d. TRACE
+B			7. HTTP request methods that can be called several times but then results still stay the same.
+				a.  Safe methods
+				b. Idempodent methods
+				c. Cacheable methods
+E			8. Server error makes use of which HTTP status codes?
+				a. 1xx
+				b. 2xx
+				c. 3xx
+				d. 4xx
+				e. 5xx
+C 			9. It was the first HTML version to be released as a W3C recommendation.
+				a. HTML 1.0
+				b. HTML 2.0
+				c. HTML 3.2
+				d.  HTML 4.01
+				e. HTML5
+C 			10. He started a breakaway group from XHTML, forming the group WHATWG. 
+				a. Tim Berners-Lee
+				b. Steve Jobs
+				c. Ian Hickson
+				d. Robert Cailliau
+TRUE OR FALSE
+TRUE 		1. The web makes use of the interconnectivity structure of the Internet and is not the Internet itself.
+FALSE 		2. Dynamic resource exists in the form that you are accessing it.
+					(Static resource exists in the form that you are accessing it.)
+FALSE 		3. Semantic coding uses different elements and entities of a document in a non-conventional manner or in a way which defies its purpose, usually for presentational aspects.
+					(Non-semantic coding uses different elements and entities of a document in a non-conventional manner or in a way which defies its purpose, usually for presentational aspects.)
+					(Semantic Coding refers to utilizing elements of a document the way they're intended to be used. )
+TRUE		4. HTTP utilizes a stateless communication protocol that does not keep client requests.
+FALSE    	5. In HTTP, cacheable mehods include GET, HEAD, OPTIONS, TRACE, PUT, DELETE.
+					(Idempodent mehods include GET, HEAD, OPTIONS, TRACE, PUT, DELETE.)
+					(Cacheable methods include GET, HEAD, POST)
+TRUE 		6. HTML5 is a combination of HTML4, XHTML and the DOM technology.
+TRUE		7. XHTML has all the elements and attributes of HTML but with stricter implementations.
+FALSE		8. HTML5 is case sensitive.
+					(HTML5 is case-insensitive.)
+FALSE 		9. Element-Specific attributes specifies ways to boost accessibility of HTML for people with constraints when using the web, in other words, help when dealing with assistive technology.
+					(Web Accessibility Initiative - Accessible Rich Internet Applications attributes specifies ways to boost accessibility of HTML for people with constraints when using the web, in other words, help when dealing with assistive technology.)
+					(Element-Specific attributes pertain to certain elements.)
+FALSE		10. An HTML comment begins with "<––" and is closed with "––>"
+					(An HTML comment begins with "<!––" and is closed with "––>")
