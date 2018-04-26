@@ -218,6 +218,8 @@ footer {
     padding: 1.5%;
     font-weight: 600;
     margin: 0;
+	bottom:0;
+	margin-bottom: 0;
 }
 
 /*for prelims.html*/
@@ -346,4 +348,50 @@ footer {
 
 .info li > ul {
     font-size: 1em;
+}
+
+/*quiz*/
+#quiz {
+    background: rgba(255, 255, 255, 0.6);
+    margin-left: 15%;
+    margin-right: 15%;    
+    text-align: center;
+    margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+#quiz h1 {
+    font-family: dense;
+    font-size: 12em;
+    vertical-align: middle;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #333333;
+}
+
+
+#quiz p, h2 {
+    font-family: ft81;
+    font-size: 3em;
+    padding-bottom: 4%;
+}
+
+p#question {
+	font-family: sans-serif;
+}
+
+p#progress {
+	font-size: 2em;
+	font-family: sans-serif;
+}
+
+.buttons {
+	width: 40%;
+	padding: 10px;
+	margin: 10px;
+}
+
+hr {
+	margin-left: 5%;
+	margin-right: 5%;
 }
