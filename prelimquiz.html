@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">		
+		<script type="text/javascript" src="main.js"></script>
+        <title>Web Systems and Technologies</title>
+    </head>
+    
+    <body>
+        <header class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header> 
+		
+		<div id="quiz">
+            <h1>Prelim Quiz</h1>
+			<hr>
+            <p id="question"></p>
+			
+			<div class="choices">
+				<button id="button-0" class="buttons"><span id="choice0"></span></button>
+				<button id="button-1" class="buttons"><span id="choice1"></span></button>
+				<button id="button-2" class="buttons"><span id="choice2"></span></button>
+				<button id="button-3" class="buttons"><span id="choice3"></span></button>
+			</div>
+			<hr>
+			<p id="progress">Question x of y.</p>
+        </div>
+        
+        <footer>&copy; Web Systems and Technologies 2018| Group 6</footer>
+		
+		<script src="quiz-controller.js"></script>
+		<script src="question.js"></script>
+		<script src="quiz-app.js"></script>
+    </body>
+</html>
