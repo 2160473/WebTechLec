@@ -115,6 +115,10 @@ body {
     color: #333333;
 }
 
+a {
+    text-decoration: none
+}
+
 .term {
     float: left;
     width: 33.33%;
@@ -135,12 +139,58 @@ body {
 }
 
 .term:nth-child(2) h3 {
-    background-image: url(notepad2.png);
+    background-image: url(notepad2.png) !important;
 }
 
 .term:nth-child(3) h3 {
     background-image: url(notepad3.png);
 }
+
+.quizzes {
+    background: rgba(240, 255, 250, 0.9);
+    padding-top: 0px;
+    padding-bottom: 3%;
+}
+
+.quizzes h2 {
+    margin: 0;
+    font-family: heart;
+    font-size: 8em;
+    text-align: center;
+    padding: 2%;
+    color: #333333;
+}
+
+.quiz {
+    float: left;
+    width: 26vw;
+}
+
+.quiz h3 {
+    font-family: heart;
+    font-size: 4em;
+    color: #333333;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url(quizPrelims.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    border-radius: 100%;
+    border-bottom-style: groove;
+    margin-left: 10%;
+}
+
+.quiz:nth-child(2) h3 {
+    background-image: url(quizMidterms.png) !important;
+}
+
+.quiz:nth-child(3) h3 {
+    background-image: url(quizFinals.png);
+}
+
 
 .row {
     margin-left: 10%;
