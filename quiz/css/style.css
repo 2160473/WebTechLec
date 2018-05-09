@@ -1,0 +1,106 @@
+@font-face {
+    font-family: STARWARS;
+    src: url("./font/STARWARS.ttf");
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url("./font/Montserrat-Regular.otf");
+}
+
+body {
+	background-image: url("../images/deathstar.jpg");
+	color: white;
+	margin:50px 0px; 
+	padding:0px;
+    text-align:center;
+    align: center;
+	font-family:Montserrat;
+}
+
+h3 {
+	font-family: STARWARS, sans-serif;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	text-shadow: 5px 5px 10px #ff1a1a;
+	
+}
+
+
+button {
+   background-color: #595959; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	width: 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	opacity: 0.75;
+	transition: all .2s ease-in-out;
+}
+
+button:hover {
+   background-color: #595959; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	width: 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+	opacity: 1;
+	transform: scale(1.1);
+	box-shadow: 0 4px 8px 0 rgba(145, 93, 182, 0.2), 0 6px 20px 0 rgba(145,93, 182, 0.19);
+}
+
+button:focus {
+   background-color: #595959; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	width: 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+	opacity: 1;
+	transform: scale(1.1);
+	box-shadow: 0 4px 8px 0 rgba(145, 93, 182, 0.2), 0 6px 20px 0 rgba(145,93, 182, 0.19);
+}
+
+input {
+	background-color: #595959; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	width: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	opacity: 1;
+}
+input:hover{
+	background-color: #595959; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	width: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+	opacity: 0.75;
+}
+
+div {
+	padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+

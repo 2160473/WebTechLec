@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>multiple-choice quiz form</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+
+		<h3>Server-Side Quiz I</h3>
+
+		<form action="grade.php" method="post" id="quiz">
+		
+			
+			<p>Select the correct answer for the question provided. </p>
+			
+			<p>1. The word which means "house" is:
+			<br>
+			<div class="col-sm-3 p-4">
+				<button type="button" name="question-1-answers" id="question-1-answers-A" value="A"/>
+				<label for="question-1-answers-A">A. maison</label>
+				</button>
+			</div>
+			
+			<div class="col-sm-3 p-4">	
+				<button type="button" name="question-1-answers" id="question-1-answers-B" value="B"> 
+				<label for="question-1-answers-B">B. quatre</label>
+				</button>
+			</div>
+			
+			<div class="col-sm-3 p-4">
+				<button type="button" name="question-1-answers" id="question-1-answers-C" value="C">
+				<label for="question-1-answers-C">C. oleil</label>
+				</button>
+			</div>
+	
+			<div class="col-sm-3 p-4">
+				<button type="button" name="question-1-answers" id="question-1-answers-D" value="D">
+				<label for="question-1-answers-C">D. poisson</label>
+				</button>
+			</div>
+			</p>
+			
+			
+			<a href="#"><input type="button" id="back" value="Back" /></a>
+			
+			<a href="#"><input type="button" id="next"value="Next" /></a>
+		
+		</form>
+	</body>
+</html>
