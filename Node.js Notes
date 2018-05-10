@@ -1,0 +1,39 @@
+NODE.JS
+	- cross-platform JavaScript runtime environment
+	-Useful for both servers and desktop applications
+	-Node.js runs aa single-threaded event loop registered with handle connections.
+	-Uses asynchronous programming
+
+**Formal definition according to the node.js official website
+	- Node.js is a JavaScript runtime built on Chrome's V8 JavaScript Engine.
+	-Node.js uses and event-driven, non-blocking I/O model that makes it lightweight and efficient.
+	-Node.js' package ecosystem, npm, is the lafgest ecosystem of open source libraries in the world.
+
+Functionalities of Node.js
+-Generate dynamic page content
+-Create, open, read, write, delete, and close files on the server.
+-Collect form data
+-Add, delete, modify data in a database
+
+** A node.js file contains certain tasks that will be executed on certain events.
+
+HANDLING HTTP REQUESTS
+I. Simple GET request
+II. GET request with form data
+III. POST request with form data
+IV. POST request with multi-part form data 
+V. Simpple text-based response (HTML)
+VI. Binary Response (IMAGE)
+
+
+
+HOW TO HANDLE HTTP REQUESTS IN NODE.JS:
+I. Using the Standard HTTP Library
+	- Node.js comes with a standard library that allows you to use it quickly without having to install 
+	external dependencies. 
+	- Node.js is not user-friendly. 
+
+II. Using the Request Library
+	- The Request Library helps to go through tasks swiftly and efficiently.
+	- Unlike the Standard HTTP Library, the Request Library is very user friendly. 
+
