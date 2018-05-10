@@ -75,44 +75,106 @@ SERVLETS - FORM DATA
 		1. Get Method
 			- the Get Method requests the data from a specified resource.
 			- default method to pass information from browser to web server.
-			* insert screenshot; anatomy of a get request *
-
-
-			
 		2. Post Method
 			- submits the processed data to a specified resource
-			 * insert screenshot; anatomy of a post request *
-
-
-(TO BE CONTINUED)
-
-I.   **SIMPLE TEXT BASED RESPONSE(HTML)
-II.  **BINARY RESPONSE (IMAGE)
-III. **HANDLING FROM DATA SUBMISSION(GET)
-IV.  **HANDLING FROM DATA SUBMISSION(POST)
-V.   **HANDLING FILE UPLOADS
-
-
-
+			 
+I.   Simple Text Based Response(HTML)
+II.  Binary Response (IMAGE)
+III. Handling Form Data Submission (GET)
+IV.  Handling Form Data Submission (POST)
+V.   Handling File Uploads
 VI. Dynamic Content (with Database Access)
 	- dynamic content do not exist as they are fetched
-	- dynamic content are created by the server in the fly
-
-
-
-
+	- dynamic content are created by the server on the fly
 VII. Dynamic Content via AJAX (with Database Access)
 
 
 
-
-
-Servlets and Java Server Pages(JSP)
+SERVLETS AND JAVA SERVER PAGES(JSP)
 	- JSP is a technology for devleoping dynamic web pages.
 	- Used to implement the GUI Part of an application. 
+	- Through the use of servlets, Java Server Pages control the content of Web Pages.         
 
-**lists using JSP 
-**lists using JSP and Servlet
+I. Lists using JSP 
+II.Lists using JSP and Servlet
+
+ELEMENTS OF JAVA SERVER PAGES
+
+I. Scriplet
+	- a scriplet contains Java language statements, varibales, methdos, declarations, or expressions. 
+Syntax:
+	<% java source code %> 
+
+II. Declarations
+	- Declarations declare one or more variables/methods that can be used for the
+	  java code in the JSP file.
+Syntax:
+<%! declaration; [ declaration; ]+ ... %>	
+
+III. Expressions
+	- JSP expressions contains a scripting language expression that is evlauted then converted to a string and inserted where the 
+	expression appears in the JSP File.
+Syntax: 
+<%= expression %>
+
+IV. JSP Comments
+Syntax:
+<%-- JSP Comment --%>
+
+V. JSP Directives
+	- Directives in JSP affects the whole structure of a servlet class.
+	- JSP directives can contain a number of attributes whicn can be list down as key-value oaris and are separated by commas. 
+Syntax:
+<%@ directive attribute="value" %>
+
+Three Types of Directive Tag:
+1. <%@ page ... %>
+	- Defines page-dependent attributes
+	- used to provide instructions to the container
+		e.g. Scripting Language
+		     Error Page etc.		
+
+2. <%@ include ... %>
+	- during he translation phase, a file is included
+
+3. <%@ taglib ... %>
+	- This directive tag declares a tag library that contains custom actions used in the page.
+ 
+
+VI. JSP Actions
+	- to control the behavior of the servlet engine JSP actions use constructs in XML syntax.
+Syntax:
+<jsp:action_name attribute="value" />
+ List of JSP Actions:
+	jsp:include
+	jsp:useBean
+	jsp:setProperty
+	jsp:setProperty
+	jsp:forward
+	jsp:plugin
+	jsp:element
+	jsp:attribute
+	jsp:body
+	jsp:text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
