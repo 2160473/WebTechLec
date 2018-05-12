@@ -71,7 +71,7 @@
 	
 	<div class = "notetopics" id="SSWSTech">
 		<h2>Server-Side Web Scripting Technologies</h2>
-    <div class="subtopic">
+	    <div class="subtopic">
 		<h3 id="servletsNotes">Java Web Servlets</h3>	
 			<h4>What is a Java Servlet?</h4>
 				<p>Java Servlet technology was created as a portable way to provide dynamic, user-oriented content. A servlet is a Java programming language class used to extend the capabilities of servers that host applications accessed by means of a request-response programming model. Although servlets can respond to any type of request, they are commonly used to extend the applications hosted by web servers. For such applications, Java Servlet technology defines HTTP-specific servlet classes.</p>
@@ -156,6 +156,7 @@
 			<p>Architecturally, JSP may be viewed as a high-level abstraction of Java servlets. JSPs are translated into servlets at runtime, therefore JSP is a Servlet; each JSP servlet is cached and re-used until the original JSP is modified. The difference of JSP with Java servlets is that, servlets are HTML in Java, while JSP is Java in HTML.</p>
     </div>
 	
+		
 	<div class="subtopic">
       <h3 id="PHPNotes">PHP</h3>
 		<h4>What is PHP?</h4>
@@ -360,6 +361,51 @@
 				</tr>
 			</table>
     </div>
+	
+		
+		<div class="subtopic">
+      		<h3 id="Cookies"> Cookies </h3>
+			<h3> What are Cookies? </h3>
+				<p> - Cookies are usually embedded in a web browser and is used to identify the user. </p>
+			
+			<h3> Cookies Attributes </h3>
+			<p> - The <em> <a href="https://www.owasp.org/index.php/HttpOnly"> httponly </a> attribute </em> is an attribute that doesn't reveal the cookie to a third party despite a trigger or a link
+				that enables <a href = "https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)" > XSS attacks </a> (Sscripts injected into websites). </p>
+			<p> - The <em> <a href= "https://www.owasp.org/index.php/SecureFlag"> Secure </a> Attribute </em> doesn't allow the cookie to be observed by unauthorized parties, and that cookies
+				are only sent in a secure channel (HTTPS) </p>
+			
+			<h3> Syntax </h3>
+			<p> - The <em> setcookie() </em> function is used to create a cookie and that the <em> name </em> attribute is the only required attribute. </p>
+			<p> 	For example: setcookie(name, value, time, domain secure, httponly); </p>
+			<p> - Note that the setcookie() function must appear before the html tags. </p>
+			<p> - To identify whether the cookie is set, the <em> isSet() </em> function is used, usually in an if statement. </p>
+			<p> - To modify the value of the cookie, the <em> setcookie() </em> just have to be called again, and then values may be updated. </p>
+			<p> - The deletion of the cookie requires, once again, the <em> setcookie() </em> function, and the expiration of the cookie should be set to a past date. </p>
+			
+		</div>
+		<div class="subtopic">
+      		<h3 id="SessionHandling">Session Handling</h3>
+			<h3> What is Session handling? </h3>
+			
+			<p> - HTTP is a stateless protocol, or that is "serves and forgets".
+			<p> - In modern websites, a series of request and response messages are usually associated to one user. Some needs to retain the information or status about them for a span of multiple requests.</p>
+			<p> - A <em> Web Session </em> is a sequence of these requests associated to one user.</p>
+			<p> - A <em> Session ID </em> or a token is a name=value pair, and is a unique ID of the session. </p>
+			<p> - It is important that information about the session should be secured and hidden from clients for the exposure of such will result will eventually lead to session highjacking attacks. These attacks are mainly with the 
+				intent of impersonating an authenticated user. </p>
+			<p> - It is recommended that these tokens are at a length of at least 16 bytes (or 128 bits) so it is harder to guess or to get in the hands of potential attackers. </p>
+			<p> - the logic behind the sessions must be stored in the server side.
+			<p> - Sessions normally keep track of the users' IP Address, User-Agent of the user, username and password, privilege level, current state, last login, and the time out of the session </p>
+    	
+			<h3> Syntax (PHP) </h3>
+			<p> - Inside the php script that must be put ahead of the html tags in the document, the <em> session_start(); <em> function is placed to commence the session. </p>
+			<p> - As aforementioned, session variables my be utilized and theredore in order to do so, variable declarations such as <em> $_SESSION["anyvariable"] = "variablevalue"; </em> are placed. </p>
+			<p> - To access these values and display them, the global $_SESSION variable is accessed. </p>
+				<p>	For example: echo "The value is" . $_SESSION["anyvariable"] . "." </p> <br>
+				
+				<p> - The <em> session_unset() </em> function is used to remove all session variables. </p>
+				<p> - The <em> session_destroy() </em> function, on the other hand, is used to destroy the session. </p>
+		</div>
     </div>
 	
 	<div class = "notetopics" id="SSWSTopics">
