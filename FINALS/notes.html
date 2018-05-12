@@ -374,18 +374,26 @@
     </div>
 	
 		
-		<div class="subtopic">
+
+				
+		
+    </div>
+	
+	<div class = "notetopics" id="SSWSTopics">
+		<h2>Server-Side Web Scripting Topics</h2>
+		
+				<div class="subtopic">
       		<h3 id="Cookies"> Cookies </h3>
-			<h3> What are Cookies? </h3>
+			<h4> What are Cookies? </h4>
 				<p> - Cookies are usually embedded in a web browser and is used to identify the user. </p>
 			
-			<h3> Cookies Attributes (PHP)</h3>
+			<h4> Cookies Attributes (PHP)</h4>
 			<p> - The <em> <a href="https://www.owasp.org/index.php/HttpOnly"> httponly </a> attribute </em> is an attribute that doesn't reveal the cookie to a third party despite a trigger or a link
 				that enables <a href = "https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)" > XSS attacks </a> (Sscripts injected into websites). </p>
 			<p> - The <em> <a href= "https://www.owasp.org/index.php/SecureFlag"> Secure </a> Attribute </em> doesn't allow the cookie to be observed by unauthorized parties, and that cookies
 				are only sent in a secure channel (HTTPS) </p>
 			
-			<h3> Syntax </h3>
+			<h4> Syntax </h4>
 			<p> - The <em> setcookie() </em> function is used to create a cookie and that the <em> name </em> attribute is the only required attribute. </p>
 			<p> 	For example: setcookie(name, value, time, domain secure, httponly); </p>
 			<p> - Note that the setcookie() function must appear before the html tags. </p>
@@ -396,7 +404,7 @@
 		</div>
 		<div class="subtopic">
       		<h3 id="SessionHandling">Session Handling (PHP)</h3>
-			<h3> What is Session handling? </h3>
+			<h4> What is Session handling? </h4>
 			
 			<p> - HTTP is a stateless protocol, or that is "serves and forgets".
 			<p> - In modern websites, a series of request and response messages are usually associated to one user. Some needs to retain the information or status about them for a span of multiple requests.</p>
@@ -417,12 +425,6 @@
 				<p> - The <em> session_unset() </em> function is used to remove all session variables. </p>
 				<p> - The <em> session_destroy() </em> function, on the other hand, is used to destroy the session. </p>
 		</div>
-				
-		
-    </div>
-	
-	<div class = "notetopics" id="SSWSTopics">
-		<h2>Server-Side Web Scripting Topics</h2>
 	</div>
 	
 	<div class = "notetopics" id="WAS">
