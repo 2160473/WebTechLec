@@ -87,6 +87,8 @@
 							<li>Invokes the service method, passing request and response objects</li>
 						</ul></li>
 					<li>If it needs to remove the servlet, the container finalizes the servlet by calling the servlet's destroy method.</li>
+					<p> A Java container also known as a Web container interacts wth Java Servlets and is responsible for managing a Servlet's lifecycle. </p>
+					<p> e.g. Tomcat, Glassfish, Jetty, Virgo, Wildfly </p>
 				</ol>
 			<h4>Version Release</h4>
 				<table class="version">
@@ -154,17 +156,31 @@
 			<p>Java Server Pages (JSP) is a server-side programming technology that enables the creation of dynamic, platform-independent method for building Web-based applications based on HTML, XML, or other document types. Released in 1999 by Sun Microsystems, JSP is similar to PHP and ASP, but it uses the Java programming language.</p>
 			<p>To deploy and run JavaServer Pages, a compatible web server with a servlet container, such as Apache Tomcat or Jetty, is required. JSP has access to the entire family of Java APIs, including the JDBC API to access enterprise databases.</p>
 	<p>Architecturally, JSP may be viewed as a high-level abstraction of Java servlets. JSPs are translated into servlets at runtime, therefore JSP is a Servlet; each JSP servlet is cached and re-used until the original JSP is modified. The difference of JSP with Java servlets is that, servlets are HTML in Java, while JSP is Java in HTML.</p>
-  <p> Through the use of servlets, Java Server Pages control the content of Web Pages. </p>
-<p>  Technology for developing dynamic pages. </p>
-<h4> Elements of Java Server Pages </h4>
-<p> I. Scriptlet </p>
-<p> - a scriptlet contains Java language statements, variables, methods, declarations, or expressions. </p>
-<p> Syntax: </p>
-<p> <% java source code %> </p>
-<p> II. Declarations </p>
-<p> 
-		
-		
+ 	 <p> Through the use of servlets, Java Server Pages control the content of Web Pages. </p>
+	<p>  Technology for developing dynamic pages. </p>
+	<h4> Elements of Java Server Pages </h4>
+	<p> I. Scriptlet </p>
+	<p> - a scriptlet contains Java language statements, variables, methods, declarations, or expressions. </p>
+	<p> Syntax: </p>
+	<p> <% java source code %> </p>
+	<p> II. Declarations </p>
+	<p> - Declarations declare one or more variables/methods that can be used for the
+		java code in the JSP file. </p>
+		<p> Syntax</p>
+		<p><%! declaration; [ declaration; ]+ ... %> </p>
+		<p>III. Expressions  </p>		
+		<p>- JSP expressions contains a scripting language expression that is evlauted then converted to a string and inserted where the 
+			expression appears in the JSP File. </p>
+		<p> Syntax: </p>
+		<p> <%= expression %> </p>
+		<p> IV. JSP Comments </p>
+		<p> Syntax: </p>
+		<p> <%-- JSP Comment --%> </p>
+		<p> V. JSP Directives </p>
+		<p>- Directives in JSP affects the whole structure of a servlet class </p>
+		<p> - JSP directives can contain a number of attributes whicn can be list down as key-value oaris and are separated by commas. </p>
+		<p> Syntax: </p>
+		<p> <%@ directive attribute="value" %> </p>
 		</div>
 	
 		
